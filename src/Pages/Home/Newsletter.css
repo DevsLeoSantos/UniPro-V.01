@@ -1,0 +1,130 @@
+
+.conteiner__Newsletter {
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+
+}
+
+.conteiner__Newsletter h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.conteiner__Newsletter p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.email__Newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.email__Newsletter input {
+    height: 2rem;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 0.3rem;
+
+}
+
+.email__Newsletter button {
+    background-color: var(--side-bg-color);
+    color: var(--main-bg-color);
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+#text__Newsletter {
+    color: var(--side-tx-color);
+    font-weight: 400;
+    font-size: 0.7rem;
+
+}
+
+@media screen and (max-width: 330px) {
+    .conteiner__Newsletter h1 {
+        font-size: 1.2rem;
+    }
+    .email__Newsletter input {
+        height: 2rem;
+        width: 70%;
+    }
+    .email__Newsletter button {
+        font-size: 8px;
+    }
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    #text__Newsletter {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+    .conteiner__Newsletter h1 {
+        font-size: 2.5rem;
+        line-height: 6rem;
+    }
+
+    .conteiner__Newsletter p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .email__Newsletter {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .email__Newsletter input {
+        height: 3rem;
+        width: 20rem;
+        border-style: none;
+        border-radius: 0.3rem;
+
+    }
+
+    .email__Newsletter button {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        height: 3rem;
+        width: 10rem;
+    }
+
+    #text__Newsletter {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1700px) {
+
+    .conteiner__Newsletter p {
+        font-size: 1.3rem;
+    }
+
+    #text__Newsletter {
+        font-size: 1.3rem;
+    }
+}

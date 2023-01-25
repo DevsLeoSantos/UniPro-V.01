@@ -1,0 +1,22 @@
+
+.as{
+    background-color: chartreuse;
+}
+
+
+
+/* Responsividade exessoes */
+
+@media screen and (max-width: 350px) {}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {}
+
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 2500px) {}

@@ -1,0 +1,130 @@
+.Conteiner__Company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    box-sizing: border-box;
+}
+
+.Conteiner__Company_description {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/imagens/BgBanner/bgPredios.svg);
+}
+
+.Company_description_left {
+    width: 5rem;
+    margin: 1rem;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: -6px -6px var(--side-bg-color);
+    background-image: url(/imagens/BgBanner/bg_Construction.svg);
+}
+
+.Company_description_left img {
+    height: 5rem;
+}
+
+.Company_description_right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Company_description_right h1 {
+    font-size: 0.9rem;
+    width: 98%;
+}
+
+.Company_description_right p {
+    width: 90%;
+    text-align: justify;
+    font-size: 0.6rem;
+}
+
+
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    
+    .Conteiner__Company_banner {
+        background-size: cover;
+    }
+    
+    .Conteiner__Company_banner h1 {
+        font-size: 3rem;
+    }
+    
+    .Conteiner__Company_description {
+        width: 100%;
+        height: 10rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(/imagens/BgBanner/bgPredios.svg);
+    }
+    
+    .Company_description_left {
+        width: 5rem;
+        margin: 1rem;
+        height: 5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 1rem;
+        border-radius: 0.3rem;
+        box-shadow: -6px -6px var(--side-bg-color);
+        background-image: url(/imagens/BgBanner/bg_Construction.svg);
+    }
+    
+    .Company_description_left img {
+        height: 5rem;
+    }
+    
+    .Company_description_right {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .Company_description_right h1 {
+        font-size: 2rem;
+        width: 98%;
+    }
+    
+    .Company_description_right p {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+    .Conteiner__Company {
+        margin: 0rem 0rem;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1700px) {}

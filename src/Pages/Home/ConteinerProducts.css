@@ -1,0 +1,136 @@
+.Box__Products::-webkit-scrollbar {
+    width: 50px;
+}
+
+.Box__Products::-webkit-scrollbar-track {
+    background: rgba(204, 204, 204, 0.354);
+}
+
+.Box__Products::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border: 3px solid var(--side-bg-color);
+}
+
+.Conteiner__Products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.Box__Text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Box__Text p {
+    display: none;
+}
+
+.Box__Text a {
+    display: none;
+}
+
+.Box__Products {
+    width: 80%;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    .Box__Text h1 {
+        font-size: 2rem;
+    }
+
+    .Box__Products {
+        display: flex;
+        justify-content: start;
+        overflow: scroll;
+        overflow-y: hidden;
+
+    }
+}
+
+/* Responsividade Notbook */
+
+@media screen and (min-width: 1010px) {
+    .Conteiner__Products {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3rem;
+        margin: 1rem 5rem;
+        padding: 1rem 0rem;
+    }
+
+    .Box__Text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        width: 50%;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .Box__Text h1 {
+        display: flex;
+        justify-content: start;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .Box__Text p {
+        text-align: justify;
+        display: flex;
+        font-weight: 600;
+        font-size: 0.8rem;
+
+    }
+
+    .Box__Text a {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        color: var(--main-bg-color);
+        background-color: var(--side-bg-color);
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .Box__Products {
+        width: 90%;
+        display: flex;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1600px) {
+    .Box__Text h1 {
+        font-size: 3rem;
+    }
+
+    .Box__Text p {
+        font-size: 1rem;
+    }
+
+    .Box__Text a {
+        font-size: 1.5rem;
+    }
+}

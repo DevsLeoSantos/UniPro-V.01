@@ -1,0 +1,50 @@
+
+.bannerCentral{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    height: 35vw;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bannerCentral_Virgula{
+    z-index: 1;
+    height: 10%;
+    margin-bottom: 2vw;
+}
+
+.bannerCentral_Text{
+    font-size: 3vw;
+    text-align: center;
+    width: 45%;
+    color: var(--main-bg-color);
+
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    .bannerCentral{
+        height: 30vw;
+    }
+    .bannerCentral_Text{
+        font-size: 3vw;
+    }
+}
+
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+    .bannerCentral{
+        height: 25vw;
+    }
+    .bannerCentral_Text{
+        font-size: 2vw;
+        width: 30%;
+    }
+}

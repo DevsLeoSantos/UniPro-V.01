@@ -1,0 +1,118 @@
+.Conteiner__CardProducts {
+    border-radius: 0.9rem;
+   
+    background-color: rgba(241, 241, 241, 0.658);
+    width: 10rem;
+    height: 15rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem 0.5rem 0.8rem 0.5rem;
+    box-sizing: border-box;
+}
+.CardProducts {
+    width: 7rem;
+    border-radius: 0.6rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.CardProducts_Produto {
+    height: 7rem;
+}
+
+.Conteiner__CardProducts h1 {
+    color: var(--main-tx-color);
+    margin: 0.5rem 0rem 0rem 0rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.Conteiner__CardProducts p {
+    color: var(--side-tx-color);
+    margin: 0.3rem 0rem 0.3rem 0rem;
+    font-size: 0.4rem;
+}
+
+.Conteiner__CardProducts a {
+    color: var(--main-bg-color);
+    background-color: var(--side-bg-color);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    .Conteiner__CardProducts {
+        border-radius: 0.5rem;
+        width: 13rem;
+        height: 18rem;
+    }
+    .CardProducts {
+        width: 10rem;
+        border-radius: 0.6rem;
+        height: 9rem;
+        background-size: 15rem;
+
+    }
+    .CardProducts_Produto {
+        height: 9rem;
+    }
+    
+    .Conteiner__CardProducts h1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.7rem 0rem 0rem 0rem;
+        font-size: 1.3rem;
+        text-align: center;
+        
+        font-weight: 700;
+    }
+    
+    .Conteiner__CardProducts p {
+        margin: 0.7rem 0rem 0.7rem 0rem;
+        font-size: 0.8rem;
+    }
+    
+    .Conteiner__CardProducts a {
+        color: var(--main-bg-color);
+        background-color: var(--side-bg-color);
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    
+}
+/* Responsividade Notbook */
+
+@media screen and (min-width: 1200px) {
+    .Conteiner__CardProducts {
+        width: 16rem;
+        height: 22rem;
+    }
+    .Conteiner__CardProducts h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .Conteiner__CardProducts p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .Conteiner__CardProducts a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+

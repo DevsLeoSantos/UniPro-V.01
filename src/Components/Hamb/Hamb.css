@@ -1,0 +1,29 @@
+.itemsOpen {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 14.9vw;
+    right: 0;
+    background-color: #ff0000;
+}
+.Hamb_itens{
+    display: flex;
+    flex-direction: column;
+}
+.Hamb_itens li{
+    border-bottom:2px solid #bfbfbf;
+    display: flex;
+    flex-direction: column;
+}
+.itemsOpen a {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.itemsClose {
+    display: none;
+
+}

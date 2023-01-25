@@ -1,0 +1,131 @@
+.conteiner_NavBar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    align-items: center;
+    width: 100%;
+    height: 15vw;
+}
+
+.logo_NavBar {
+    height: 2.5rem;
+}
+
+.conteiner_Routers {
+    display: none;
+}
+
+.Conteiner__Busca {
+    display: none;
+}
+
+@media screen and (max-width: 330px) {
+    .logo_NavBar {
+        height: 1.5rem;
+    }
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    .logo_NavBar {
+        height: 5rem;
+    }
+
+}
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+    .itemsOpen{
+        display:none;
+    }
+    .conteiner_NavBar {
+        background-color: var(--main-bg-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 3rem;
+        align-items: center;
+        width: 100%;
+        height: 5vw;
+    }
+
+    .botaoHamburguer {
+        display: none;
+    }
+
+    .logo_NavBar {
+        height: 3rem;
+    }
+
+    .conteiner_Routers {
+        display: flex;
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .conteiner_itens {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .conteiner_itens a {
+        color: var(--main-tx-color);
+        font-weight: 700;
+        font-size: 1rem;
+
+
+    }
+
+    .conteiner_itens a:hover {
+        color: var(--sid-bg-color);
+
+
+    }
+
+    .Conteiner__Busca {
+        display: flex;
+        align-items: center;
+        background-color: var(--main-bg-color);
+        border: solid 1px;
+        border-radius: 10px;
+        width: 300px;
+    }
+
+    .Conteiner__Busca {
+        background-color: var(--main-bg-color);
+    }
+
+    .txt__Busca {
+        float: left;
+        background-color: transparent;
+        padding-left: 5px;
+        font-style: italic;
+        font-size: 18px;
+        border: none;
+        height: 32px;
+        width: 260px;
+    }
+
+
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1700px) {
+    .conteiner_itens a {
+        font-size: 2rem;
+    }
+    .logo_NavBar {
+        height: 8rem;
+    }
+}

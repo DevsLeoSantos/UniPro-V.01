@@ -1,0 +1,158 @@
+.Conteiner__Solucoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-image: url(/imagens/BgBanner/Predios.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.solucoes_imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.Conteiner___imagem {
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imagens/BgBanner/bg_Construction.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: -10px -10px var(--side-bg-color);
+}
+
+.Conteiner___imagem img {
+    height: 5rem;
+}
+
+.solucoes_text {
+    width: 50%;
+}
+
+.solucoes_text h1 {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.solucoes_text p {
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+/* Responsividade Exessão */
+
+@media screen and (max-width: 350px) {
+    .Conteiner__Solucoes {
+        gap: 2rem;
+    }
+
+    .solucoes_imagem {
+        width: 40%;
+    }
+
+    .Conteiner___imagem {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 0.5rem;
+    }
+
+    .Conteiner___imagem img {
+        height: 2rem;
+    }
+
+    .solucoes_text {
+        width: 40%;
+    }
+
+    .solucoes_text h1 {
+        font-size: 0.6rem;
+    }
+
+    .solucoes_text p {
+        font-size: 0.5rem;
+    }
+}
+
+/* Responsividade Tablet  */
+
+@media screen and (min-width: 600px) {
+    .Conteiner___imagem {
+
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .solucoes_imagem {
+        width: 40%;
+    }
+
+    .solucoes_text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .solucoes_text p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade Notebook  */
+
+@media screen and (min-width: 1200px) {
+    .Conteiner__Solucoes {
+        padding: 2rem;
+        height: 25rem;
+        gap: 5rem;
+    }
+
+    .solucoes_imagem {
+        width: 20%;
+    }
+
+    .Conteiner___imagem {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .Conteiner___imagem img {
+        height: 10rem;
+    }
+
+    .solucoes_text {
+        width: 40%;
+    }
+
+    .solucoes_text h1 {
+        font-size: 2rem;
+    }
+
+    .solucoes_text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividade Desktop  */
+
+@media screen and (min-width: 2000px) {
+    .Conteiner__Solucoes {
+        height: 30rem;
+    }
+
+    .solucoes_text h1 {
+        font-size: 3rem;
+    }
+
+    .solucoes_text p {
+        font-size: 1.5rem;
+    }
+}

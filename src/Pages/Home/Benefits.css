@@ -1,0 +1,89 @@
+.conteiner__Beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--side-bg-color);
+    padding: 2rem;
+
+}
+
+.conteiner__Beneficios h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-bg-color);
+}
+
+.logos__Beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos__Beneficios div {
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos__Beneficios div img {
+    height: 2rem;
+}
+.logos__Beneficios div h3 {
+    color: var(--main-bg-color);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.logos__Beneficios div p {
+    color: var(--main-bg-color);
+    font-size: 0.5rem;
+    width: 5rem;
+    text-align: center;
+}
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 600px) {
+    .logos__Beneficios div img {
+        height: 4rem;
+    }
+    .logos__Beneficios div h3 {
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+    }
+    .logos__Beneficios div p {
+        font-size: 0.9rem;
+        width: 9rem;
+    }
+}
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+
+    .logos__Beneficios div h3 {
+        font-size: 1.5rem;
+        padding: 1rem 4rem;
+    }
+}
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1700px) {
+    .conteiner__Beneficios h1 {
+        font-size: 3rem;
+    }
+    .logos__Beneficios div img {
+        height: 6rem;
+    }
+    .logos__Beneficios div h3 {
+        font-size: 2rem;
+        padding: 1rem 5rem;
+    }
+    .logos__Beneficios div p {
+        font-size: 1.4rem;
+        width: 15rem;
+    }
+}
