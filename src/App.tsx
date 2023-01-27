@@ -8,8 +8,11 @@ import NavBar from './Components/NavBar'
 
 //Estilos
 import './App.css'
+
+//teste
 import Login from "./Pages/Login/Index"
 import DashBoard from "./Pages/DashBoard/Index"
+
 
 function App() {
 
@@ -19,7 +22,7 @@ function App() {
       <Footer />
       <BntWhats/>
       {/* <Login/> */}
-      <DashBoard/>
+      {/* <DashBoard/> */}
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Hamb from '../Hamb';
 
 //Imagens
-import Logo from "/imagens/Logos/Unipro_simbolo.svg"
+import Logo from "/imagens/Logos/LogoUnipro.svg"
 
 //Pages
 import Home from '../../Pages/Home';
