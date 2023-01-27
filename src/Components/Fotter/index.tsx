@@ -52,7 +52,7 @@ const Footer = () => {
 
             </section>
             <div className="Conteiner__right_Footer">
-                <a href="google.com.br">Subir ao topo</a>
+                <a href="/">Subir ao topo</a>
             </div>
 
         </div>
