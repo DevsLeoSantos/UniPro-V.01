@@ -87,7 +87,6 @@ const MaisProdutos = () => {
       rotaDoProduto: "UNIPRO PU40"
     },
   ]
-  console.log(produtosUnipro)
 
   return (
 

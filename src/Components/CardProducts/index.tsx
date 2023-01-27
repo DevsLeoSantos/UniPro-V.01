@@ -18,7 +18,7 @@ const CardProducts = (props: PropsCardProducts) => {
 
     const rota = `${props.router}`
     // const rota = `/produtos/#${props.router}`
-    console.log(rota)
+
     return (
         <div className="ConteinerMain__CardProducts">
             <div className="Conteiner__CardProducts">

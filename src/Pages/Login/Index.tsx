@@ -14,8 +14,6 @@ const Login = () => {
 
     const AoEntrar = (e: any) => {
         e.preventDefault();
-
-        console.log(passwordAdm, userAdm)
         setUserAdm("");
         setPasswordAdm("");
     }

@@ -30,7 +30,6 @@ const Home = () => {
   }
   const aoSalvar = (e: any) => {
     e.preventDefault()
-    console.log(news)
     setNews("")
   }
   return (

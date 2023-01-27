@@ -34,7 +34,6 @@ const Contats = () => {
     e.preventDefault();
 
     MsgList=[nome,email,telefone,mensagen,cidade]
-    console.log(MsgList)
 
     setNome("")
     setEmail("")
