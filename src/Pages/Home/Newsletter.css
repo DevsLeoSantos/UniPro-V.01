@@ -43,7 +43,7 @@
 .email__Newsletter button {
     background-color: var(--side-bg-color);
     color: var(--main-bg-color);
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     padding: 0.2rem;
     height: 2rem;
     border-style: none;

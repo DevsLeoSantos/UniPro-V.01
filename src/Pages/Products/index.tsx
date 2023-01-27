@@ -1,7 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
+//Biblioteca
 import Produtos from '../../Components/Produtos'
-import "./Products.css"
 
 //Dados
 import ProdutosUnipro from "../../data";
@@ -11,7 +9,7 @@ const Products = () => {
   return (
     <div>
       {ProdutosUnipro.map((produto) => {
-        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, rota} = produto;
+        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, rota, fichaTécnica, fispq} = produto;
         return (
           <Produtos
             produtoLinha={linha}
@@ -22,6 +20,8 @@ const Products = () => {
             produtoNome={nome}
             produtoDescricao={descricao}
             router={rota}
+            Fispq={fispq}
+            FichaTec={fichaTécnica}
           />
         )
       })}

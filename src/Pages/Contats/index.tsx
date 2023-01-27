@@ -53,7 +53,7 @@ const Contats = () => {
       </div>
       <form onSubmit={aoSubmeter} className='Form__Contato'>
         <h1>Contato</h1>
-        <p>Envie avaliação por favor, isso nos ajudará a sermos melhores!</p>
+        <p>Preencha o formulário e em breve entraremos em contato para realizarmos um orçamento!</p>
         <div className='Conteiner__CaixaTexto'>
           <CaixaTexto
             id="Nome"

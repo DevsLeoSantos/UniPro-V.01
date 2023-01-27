@@ -13,8 +13,9 @@ interface PropsProdutos {
     productAlt: string;
     produtoNome: string;
     produtoDescricao: string;
-    router: string
-
+    router: string;
+    Fispq: string;
+    FichaTec: string;
 }
 
 const Produtos = (props: PropsProdutos) => {
@@ -40,8 +41,8 @@ const Produtos = (props: PropsProdutos) => {
                     <div className="Desk_Conteiner__right_budget">
                         <a className="Desk_right_budget" href="uniprosf.com.br">Orcarmento</a>
                         <div className="Desk_Conteiner__right_side">
-                            <a className="Desk_right_budget Desk_side" href="/imagens/Catalogo_2022_Unipro_.pdf" download>Baixar</a>
-                            <a className="Desk_right_budget Desk_side" href="/imagens/Catalogo_2022_Unipro_.pdf" download>Baixar</a>
+                            <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Baixar</a>
+                            <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Baixar</a>
                         </div>
                     </div>
 

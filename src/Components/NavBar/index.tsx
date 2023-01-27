@@ -1,6 +1,6 @@
 //Bibliotecas
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Carrocel from '../Carrocel';
+import Hamb from '../Hamb';
 
 //Imagens
 import Logo from "/imagens/Logos/Unipro_simbolo.svg"
@@ -13,15 +13,10 @@ import Contats from '../../Pages/Contats';
 
 //Estilos
 import "./NavBar.css"
-import Hamb from '../Hamb';
-
 
 
 const NavBar = () => {
-  var altura = window.screen.height;
-  var largura = window.screen.width;
-  console.log(altura);
-  console.log(largura);
+
   return (
     <Router>
       <div className='conteiner_NavBar'>

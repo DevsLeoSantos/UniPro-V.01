@@ -154,8 +154,8 @@
         /* background-image: url(/public/imagens/BgBanner/bubble.svg);
         background-repeat: no-repeat;
         top: 0px;
-        background-size: 50rem;
-        */
+        background-size: 50rem; */
+       
     } 
 
     .Conteiner__imgContato img {
@@ -194,7 +194,7 @@
 
     .Bnt__Msg {
         margin-top: 0.5rem;
-        width: 82%;
+        width: 57%;
         height: rem;
         font-size: 1rem;
         padding: 0rem ;
