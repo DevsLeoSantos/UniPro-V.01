@@ -1,4 +1,5 @@
 //Componentes
+import AOS from 'aos';
 import BannerCentral from "../../Components/BannerCentral"
 
 // Estilo
@@ -8,10 +9,7 @@ import "./Video.css"
 import "./Maps.css"
 import "./Solucoes.css"
 import "./Distribuição.css"
-
-
-import Caminhao from "../../Components/Caminhao"
-
+import 'aos/dist/aos.css';
 
 
 const Company = () => {
@@ -21,23 +19,23 @@ const Company = () => {
     return (
         <div className='Conteiner__Company'>
 
-            <section className='Conteiner__Company_banner'>
+            <section data-aos="fade-in" className='Conteiner__Company_banner'>
                 <h1>Quem Somos</h1>
             </section>
 
-            <section className="Conteiner__Solucoes">
+            <section data-aos="fade-down" className="Conteiner__Solucoes">
                 <div className="solucoes_imagem">
                     <div className="Conteiner___imagem">
                         <img src="/imagens/Logos/LogoTrasparente.svg" alt="Logo Trasparente"></img>
                     </div>
                 </div>
-                <div className="solucoes_text">
+                <div data-aos="fade-in" className="solucoes_text">
                     <h1>Pensando em melhores soluções para área da construção civil?</h1>
                     <p>a UNIPRO Selantes foi fundada com o objetivo de não só apresentar, mas também de disponibilizar essas soluções da melhor maneira possível, de forma rápida, prática e segura.</p>
                 </div>
             </section>
 
-            <section className="Conteiner__distribuição">
+            <section data-aos="fade-right" className="Conteiner__distribuição">
                 <div className="distribuição_left">
                     <div className="distribuição_decada">
                         <h1>&#10027; Mais de uma Década</h1>
@@ -76,14 +74,22 @@ const Company = () => {
                 </div>
             </section>
 
-            <Caminhao/>
+            <section data-aos="fade-left" className="Conteiner__Video">
+                <div className="Text_Video">
+                    <h1>Produtos<span>UniPro</span></h1>
+                    <h2>Agora, também atuando no setor <span>INDUSTRIAL</span>, fabricamos nossa própria linha de <span>selantes</span>, <span>fixadores e silicones</span>, trazendo cada vez mais qualidade, valor e segurança para nossos clientes e parceiros.</h2>
+                </div>
+                <div className="Video_main">
+                    <img src="/imagens/ProdutosVideo.gif" alt="Produção de Pu" />
+                </div>
+            </section>
 
             <BannerCentral
                 text='Conheça a UNIPRO, a indústria mais completa do interior paulista, com compromisso total pelo cliente!'
                 img={"/imagens/BgBanner/BgImg2.svg"}
             />
 
-            <section className="Conteiner__maps">
+            <section data-aos="zoom-in" className="Conteiner__maps">
                 <div className="maps">
                     <iframe src={map} className="Map" aria-hidden="false"></iframe>
                 </div>

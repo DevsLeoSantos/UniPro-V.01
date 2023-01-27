@@ -40,7 +40,7 @@ const NavBar = () => {
               <Link to='/contato'>Contato</Link>
             </li>
             <li>
-              <a href="https://www63.bb.com.br/portalbb/boleto/boletos/hc21e,802,3322,10343.bbx?pk_vid=3dafaf5722a42376161822667092c42a&pk_vid=3dafaf5722a42376161822667092c42a&pk_vid=3dafaf5722a42376161822667092c42a">Atualize seu Boleto</a>
+              <a target="_blank" href="https://www63.bb.com.br/portalbb/boleto/boletos/hc21e,802,3322,10343.bbx?pk_vid=3dafaf5722a42376161822667092c42a&pk_vid=3dafaf5722a42376161822667092c42a&pk_vid=3dafaf5722a42376161822667092c42a">Atualize seu Boleto</a>
             </li>
           </ul>
         </div>

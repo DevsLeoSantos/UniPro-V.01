@@ -64,7 +64,7 @@ const Home = () => {
         img={"/imagens/BgBanner/BgImg1.svg"}
       />
 
-      <section className='conteiner__Beneficios'>
+      <section data-aos="fade-right" className='conteiner__Beneficios'>
         <h1>Benefícios</h1>
         <div className='logos__Beneficios'>
           <div>
@@ -90,7 +90,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='conteiner__Newsletter'>
+      <section data-aos="fade-left" className='conteiner__Newsletter'>
         <h1>Receba Promoções</h1>
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 

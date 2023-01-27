@@ -5,7 +5,9 @@
     flex-direction: column;
     margin: 2rem 0rem;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
+
 
 .Conteiner__Company_description {
     width: 100%;

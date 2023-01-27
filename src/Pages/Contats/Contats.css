@@ -13,7 +13,7 @@
 
 .CaixaMsg__input {
     height: 10rem;
-    width: 23rem;
+    width: 20rem;
     border-radius: 0.3rem;
     border: 0.1rem solid;
     border-color: rgb(84, 84, 84);
@@ -51,7 +51,6 @@
 .Bnt__Msg {
     background-color: var(--side-bg-color);
     color: var(--main-bg-color);
-    width: 85%;
     font-size: 1.5rem;
     padding: 0rem 2rem;
     height: 3rem;
@@ -87,8 +86,6 @@
     }
     
     .Bnt__Msg {
-     
-        width: 85%;
         font-size: 1rem;
         padding: 0rem 2rem;
         height: 2rem;
@@ -131,7 +128,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
         font-size: 2rem;
         padding: 2rem 2rem;
         height: 3rem;
@@ -157,6 +153,10 @@
         background-size: 50rem; */
        
     } 
+    .Conteiner__CaixaTextoSide{
+        background-color: wheat;
+        width: 50;
+    }
 
     .Conteiner__imgContato img {
         height: 25rem;
@@ -194,8 +194,7 @@
 
     .Bnt__Msg {
         margin-top: 0.5rem;
-        width: 57%;
-        height: rem;
+        height: 4rem;
         font-size: 1rem;
         padding: 0rem ;
  
@@ -230,7 +229,6 @@
     }
 
     .Bnt__Msg {
-        width: 82%;
         font-size: 1.5rem;
         padding: 0rem 2rem;
     }

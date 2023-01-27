@@ -21,7 +21,7 @@ const CardProducts = (props: PropsCardProducts) => {
 
     return (
         <div className="ConteinerMain__CardProducts">
-            <div className="Conteiner__CardProducts">
+            <div className=" swing Conteiner__CardProducts">
                 <div className="CardProducts" style={{backgroundImage: `url(${props.imgBg})`}}>
                     <img className='CardProducts_Produto'src={props.img} alt={props.alt} />
                 </div>

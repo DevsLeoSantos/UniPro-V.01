@@ -22,19 +22,19 @@ const Footer = () => {
             <section className="Conteiner__center_Footer">
 
                 <div className="Conteiner__Logos_Footer">
-                    <a href="https://www.facebook.com/uniproselantes13/">
+                    <a href="https://www.facebook.com/uniproselantes13/" target="_blank">
                         <img src={Facebook} alt="Logo Facebook"></img>
                     </a>
                     <a
-                        href="https://www.instagram.com/uniproselantes/">
+                        href="https://www.instagram.com/uniproselantes/" target="_blank">
                         <img src={Instagram} alt="Logo Instagram"></img>
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/unipro-selantes-52532723b/">
+                        href="https://www.linkedin.com/in/unipro-selantes-52532723b/" target="_blank">
                         <img src={Linkedin} alt="Logo Linkedin"></img>
                     </a>
                     <a
-                        href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21">
+                        href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">
                         <img src={Whatsapp} alt="Logo Whatsapp"></img>
                     </a>
                 </div>

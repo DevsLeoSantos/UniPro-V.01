@@ -100,7 +100,12 @@
 
 /* Responsividade Exessão */
 
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+    .distribuição_decada h1 {
+        font-size: 0.5rem;
+        padding-top: 0.6rem ;
+    }
+}
 
 /* Responsividade Tablet  */
 

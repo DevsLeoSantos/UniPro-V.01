@@ -9,8 +9,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/PU40 - UNIPRO.png",
       imagemProductAlt: "UNIPRO PU40",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_PU40.pdf",
+      fispq:"/Arquivos/FISPQ_PU-40.pdf"
     },
     {
       nome: 'MS Híbrido',
@@ -22,8 +22,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/MS_hibrido - UNIPRO.png",
       imagemProductAlt: "UNIPRO MS hibrido",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_MS_Hibrido.pdf",
+      fispq:"/Arquivos/FISPQ_MS-Hibrido.pdf"
       
     },
     {
@@ -36,8 +36,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/Silicone_Neutro - UNIPRO.png",
       imagemProductAlt: "UNIPRO Silicone Neutro",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_Silicone_neutro.pdf",
+      fispq:"/Arquivos/FISPQ_Silicone_neutro.pdf"
     },
     {
       nome: 'Silicone Acético',
@@ -49,8 +49,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/Silicone_Acetico - UNIPRO.png",
       imagemProductAlt: "UNIPRO Silicone Acetico",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_Silicone_acetico.pdf",
+      fispq:"/Arquivos/FISPQ_Silicone_acetico.pdf"
     },
     {
       nome: 'Fixa Espelho',
@@ -62,8 +62,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/Fixa_Espelho - UNIPRO.png",
       imagemProductAlt: "UNIPRO Fixa Espelho",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_espelho.pdf",
+      fispq:"/Arquivos/FISPQ_Fixa_Espelho.pdf"
     },
     {
       nome: 'Fixa Tudo',
@@ -75,8 +75,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/Fixa_Tudo - UNIPRO.png",
       imagemProductAlt: "UNIPRO Tudo Espelho",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_tudo.pdf",  // baixar
+      fispq:"/Arquivos/FISPQ_Fixa_tudo.pdf" // baixar
     },
     {
       nome: 'Fixa Cuba',
@@ -88,8 +88,8 @@ const ProdutosUnipro = [
       imagemDoProduto: "/imagens/Produtos/Fixa_Cuba - UNIPRO.png",
       imagemProductAlt: "UNIPRO Cuba Espelho",
       rota: "/produtos",
-      fichaTécnica:"#",
-      fispq:"#"
+      fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_cuba.pdf",
+      fispq:"/Arquivos/FISPQ_Fixa_Cuba.pdf"
     },
 
  ]

@@ -15,7 +15,7 @@ import imagem3 from "/imagens/ImagensCarrocel/Carrocel3.svg";
 
 const Carrocel = () => {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+    <div data-aos="fade-in" id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

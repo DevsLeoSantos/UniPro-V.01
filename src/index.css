@@ -6,32 +6,39 @@
   --side-tx-color: #556070;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-a:hover{
+
+a:hover {
   font-weight: bold;
   color: #dbdbdb;
+  text-decoration: none;
 }
+
 dl ol ul {
   margin-top: 0;
 
 }
+
 ol ul {
- padding-left: 2rem;
+  padding-left: 2rem;
 }
+
 span {
   color: #ff001e;
- }
+}
 
 
 /* Responsividade Exessão */
@@ -46,6 +53,6 @@ span {
 
 @media screen and (min-width: 1200px) {}
 
- /* Responsividade Desktop  */
+/* Responsividade Desktop  */
 
-@media screen and (min-width: 2000px) {} 
+@media screen and (min-width: 2000px) {}

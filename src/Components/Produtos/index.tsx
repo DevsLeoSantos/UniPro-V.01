@@ -1,10 +1,6 @@
 //Estilos
 import "./Produtos.css"
 
-
-
-
-
 interface PropsProdutos {
     produtoLinha: string;
     produtoBgImagem: any;
@@ -21,7 +17,10 @@ interface PropsProdutos {
 const Produtos = (props: PropsProdutos) => {
     return (
         <>
-            <div  id = {props.router}style={{ backgroundImage: `url(${props.produtoBgImagem})` }} className="Desk_Conteiner__main">
+            <div id={props.router} data-aos="zoom-in-down" className="Desk_Conteiner__main">
+                <div className="Desk_Conteiner_BgImg">
+                    <img src={props.produtoBgImagem} alt={props.productAlt} />
+                </div>
                 <div className="Desk_Conteiner__left">
                     <h1 className="Desk_Conteiner__left_line">{props.produtoLinha}</h1>
                     <h2>APLICAÇÃO</h2>
@@ -41,8 +40,8 @@ const Produtos = (props: PropsProdutos) => {
                     <div className="Desk_Conteiner__right_budget">
                         <a className="Desk_right_budget" href="uniprosf.com.br">Orcarmento</a>
                         <div className="Desk_Conteiner__right_side">
-                            <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Baixar</a>
-                            <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Baixar</a>
+                            <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
+                            <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
                         </div>
                     </div>
 
@@ -81,8 +80,8 @@ const Produtos = (props: PropsProdutos) => {
 
                     <h2 className="Produtos__right_color">Mais:</h2>
                     <div className='ConteinerBotao botaoside'>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>baixar catalogo</a>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>baixar fispq</a>
+                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Ficha Técnica</a>
+                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Fispq</a>
                     </div>
                 </div>
                 <div className="Produtos__Logo">

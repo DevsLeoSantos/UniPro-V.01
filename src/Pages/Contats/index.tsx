@@ -89,7 +89,6 @@ const Contats = () => {
             icon="./imagens/Logos/PhoneCall.svg"
             Digita={telefone}
             aoAlterado={(Digita: React.SetStateAction<string>) => setTelefone(Digita)}
-            
           />
           <div className="Conteiner_CaixaTexto">
             <div className='CaixaTexto'>
