@@ -4,10 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url("/imagens/BgBanner/Decore.svg");
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
+
 }
 
 .Conteiner__imgContato img {
