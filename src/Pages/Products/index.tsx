@@ -6,14 +6,13 @@ import Produtos from "../../Components/Produtos";
 //Dados
 import ProdutosUnipro from "../../data";
 
-<<<<<<< HEAD
 //Estilo
 import "./Produtos.css";
 
-=======
-type Produtos = {
+type IProdutos = {
   nome: string;
   imagemUrl: string;
+  fichaTecnicaUrl?: string;
   imagemNome: string;
   descricao: string;
   aplicacao: string;
@@ -23,19 +22,13 @@ type Produtos = {
     descricao: string;
   };
 };
->>>>>>> 9433060f7444008d93120347f6069586e2026327
 
 const Products = () => {
-  const [produtos, setProdutos] = useState<Produtos[]>([]);
+  const [produtos, setProdutos] = useState<IProdutos[]>([]);
 
   async function getProdutos() {
-    var produtos = await api.get("/produto", {
-      headers: {
-        "x-api-key": "adoleta",
-      },
-    });
-
-    return produtos.data as Produtos[];
+    var produtos = await api.get("/produto");
+    return produtos.data as IProdutos[];
   }
 
   useEffect(() => {
@@ -46,57 +39,7 @@ const Products = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div >
-      {ProdutosUnipro.map((produto) => {
-        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, rota, fichaTécnica, fispq } = produto;
-        return (
-          <div>
-            <Produtos
-              produtoLinha={linha}
-              produtoBgImagem={imgbgproduto}
-              produtoAplicacao={aplicacao}
-              produtoImagem={imagemDoProduto}
-              productAlt={imagemProductAlt}
-              produtoNome={nome}
-              produtoDescricao={descricao}
-              router={rota}
-              Fispq={fispq}
-              FichaTec={fichaTécnica}
-            />
-          </div>
-        )
-=======
     <div>
-      {/* {ProdutosUnipro.map((produto) => {
-        const {
-          linha,
-          imgbgproduto,
-          aplicacao,
-          imagemDoProduto,
-          imagemProductAlt,
-          nome,
-          descricao,
-          rota,
-          fichaTécnica,
-          fispq,
-        } = produto;
-        return (
-          <Produtos
-            produtoLinha={linha}
-            produtoBgImagem={imgbgproduto}
-            produtoAplicacao={aplicacao}
-            produtoImagem={imagemDoProduto}
-            productAlt={imagemProductAlt}
-            produtoNome={nome}
-            produtoDescricao={descricao}
-            router={rota}
-            Fispq={fispq}
-            FichaTec={fichaTécnica}
-          />
-        );
-      })} */}
-
       {produtos.map((produto) => {
         return (
           <Produtos
@@ -105,9 +48,9 @@ const Products = () => {
             produtoImagem={produto.imagemUrl}
             produtoNome={produto.nome}
             produtoDescricao={produto.descricao}
+            FichaTec={produto.fichaTecnicaUrl}
           />
         );
->>>>>>> 9433060f7444008d93120347f6069586e2026327
       })}
     </div>
   );

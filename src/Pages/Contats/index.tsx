@@ -103,13 +103,9 @@ const Contats = () => {
             placeholder="(00) 00000-0000"
             icon="./imagens/Logos/PhoneCall.svg"
             Digita={telefone}
-<<<<<<< HEAD
-            aoAlterado={(Digita: React.SetStateAction<string>) => setTelefone(Digita)}
-=======
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setTelefone(Digita)
             }
->>>>>>> 9433060f7444008d93120347f6069586e2026327
           />
           <div className="Conteiner_CaixaTexto">
             <div className="CaixaTexto">

@@ -1,9 +1,5 @@
 //Estilos
-<<<<<<< HEAD
-import "./Produtos.css"
-=======
 import "./Produtos.css";
->>>>>>> 9433060f7444008d93120347f6069586e2026327
 
 interface PropsProdutos {
   produtoLinha: string;
@@ -19,40 +15,6 @@ interface PropsProdutos {
 }
 
 const Produtos = (props: PropsProdutos) => {
-<<<<<<< HEAD
-    return (
-        <>
-            <div id={props.router} data-aos="zoom-in-down" className="Desk_Conteiner__main">
-                <div className="Desk_Conteiner_BgImg">
-                    <img src={props.produtoBgImagem} alt={props.productAlt} />
-                </div>
-                <div className="Desk_Conteiner__left">
-                    <h1 className="Desk_Conteiner__left_line">{props.produtoLinha}</h1>
-                    <h2>APLICAÇÃO</h2>
-                    <p>{props.produtoAplicacao}</p>
-                    <div className="Desk_Conteiner__Logo">
-                        <img src="/imagens/Logos/LogoTrasparente.svg" alt="Logo Trasparente"></img>
-                    </div>
-                </div>
-                <div className="Desk_Conteiner__center">
-                    <img src={props.produtoImagem} alt={props.productAlt}></img>
-                </div>
-                <div className="Desk_Conteiner__right">
-                    <h1>{props.produtoNome}</h1>
-                    <p className="Desk_Conteiner__right_description">{props.produtoDescricao}</p>
-                    <p className="Desk_Conteiner__right_color">Cores:</p>
-
-                    <div className="Desk_Conteiner__right_budget">
-                        <a className="Desk_right_budget" href="uniprosf.com.br">Orcarmento</a>
-                        <div className="Desk_Conteiner__right_side">
-                            <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
-                            <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
-                        </div>
-                    </div>
-
-
-                </div>
-=======
   return (
     <>
       <div
@@ -82,13 +44,14 @@ const Produtos = (props: PropsProdutos) => {
           <p className="Desk_Conteiner__right_color">Cores:</p>
 
           <div className="Desk_Conteiner__right_budget">
-            <a className="Desk_right_budget" href="uniprosf.com.br">
+            <a className="Desk_right_budget" href="/contato">
               Orcarmento
             </a>
             <div className="Desk_Conteiner__right_side">
               <a
                 className="Desk_right_budget Desk_side"
                 href={props.Fispq}
+                target="_blank"
                 download
               >
                 Baixar
@@ -96,11 +59,11 @@ const Produtos = (props: PropsProdutos) => {
               <a
                 className="Desk_right_budget Desk_side"
                 href={props.FichaTec}
+                target="_blank"
                 download
               >
                 Baixar
               </a>
->>>>>>> 9433060f7444008d93120347f6069586e2026327
             </div>
           </div>
         </div>
@@ -160,42 +123,4 @@ const Produtos = (props: PropsProdutos) => {
   );
 };
 
-<<<<<<< HEAD
-                <div className="Produtos__text">
-                    <h1 className="Produtos__text_name">{props.produtoNome}</h1>
-                    <h1 className="Produtos__text_line">{props.produtoLinha}</h1>
-                </div>
-                <div className='ConteinerBotao'>
-                    <a className="Produtos__right_budget" href="uniprosf.com.br">Orcarmento</a>
-                </div>
-                <div className="Produtos__img">
-                    <img src={props.produtoImagem} alt={props.productAlt}></img>
-                </div>
-                <div className="Produtos__conteudo">
-                    <h2>Aplicação</h2>
-                    <p>{props.produtoAplicacao}</p>
-
-                    <h2>Descrição</h2>
-                    <p className="Produtos__right_description">{props.produtoDescricao}</p>
-
-                    <h2 className="Produtos__right_color">Mais:</h2>
-                    <div className='ConteinerBotao botaoside'>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Ficha Técnica</a>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Fispq</a>
-                    </div>
-                </div>
-                <div className="Produtos__Logo">
-                    <img src="/imagens/Logos/LogoTrasparente.svg" alt="Logo Trasparente"></img>
-                </div>
-            </div>
-
-
-        </>
-
-    )
-}
-
-export default Produtos
-=======
 export default Produtos;
->>>>>>> 9433060f7444008d93120347f6069586e2026327
