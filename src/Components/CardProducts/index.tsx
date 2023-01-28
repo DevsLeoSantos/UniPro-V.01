@@ -1,6 +1,3 @@
-//Bibliotecas
-import React from "react";
-
 //Estilos
 import "./CardProducts.css";
 
@@ -9,11 +6,10 @@ interface PropsCardProducts {
   imgBg?: any;
   text: string;
   line: string;
-  router?: string;
-  alt?: string;
 }
 
 const CardProducts = (props: PropsCardProducts) => {
+
   return (
     <div className="ConteinerMain__CardProducts">
       <div className=" swing Conteiner__CardProducts">
@@ -24,7 +20,7 @@ const CardProducts = (props: PropsCardProducts) => {
           <img
             className="CardProducts_Produto"
             src={props.img}
-            alt={props.alt}
+            alt={`Unipro ${props.text}`}
           />
         </div>
         <h1>{props.text}</h1>

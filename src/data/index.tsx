@@ -8,7 +8,6 @@ const ProdutosUnipro = [
       aplicacao: 'Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.',
       imagemDoProduto: "/imagens/Produtos/PU40 - UNIPRO.png",
       imagemProductAlt: "UNIPRO PU40",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_PU40.pdf",
       fispq:"/Arquivos/FISPQ_PU-40.pdf"
     },
@@ -21,7 +20,6 @@ const ProdutosUnipro = [
       aplicacao: 'Colagens de perfis de alumínio em vidros,vedações perimetrais entre perfis de alumínio,vidro e alvenaria, juntas estruturais.',
       imagemDoProduto: "/imagens/Produtos/MS_hibrido - UNIPRO.png",
       imagemProductAlt: "UNIPRO MS hibrido",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_MS_Hibrido.pdf",
       fispq:"/Arquivos/FISPQ_MS-Hibrido.pdf"
       
@@ -35,7 +33,6 @@ const ProdutosUnipro = [
       aplicacao: 'Vedações e preenchimento de juntas de acabamentos. Adere em diversas superfícies, vidro, concreto, policarbonato, fibra de vidro e alguns tipos de plásticos.',
       imagemDoProduto: "/imagens/Produtos/Silicone_Neutro - UNIPRO.png",
       imagemProductAlt: "UNIPRO Silicone Neutro",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_Silicone_neutro.pdf",
       fispq:"/Arquivos/FISPQ_Silicone_neutro.pdf"
     },
@@ -48,7 +45,6 @@ const ProdutosUnipro = [
       aplicacao: 'Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.',
       imagemDoProduto: "/imagens/Produtos/Silicone_Acetico - UNIPRO.png",
       imagemProductAlt: "UNIPRO Silicone Acetico",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_Silicone_acetico.pdf",
       fispq:"/Arquivos/FISPQ_Silicone_acetico.pdf"
     },
@@ -61,7 +57,6 @@ const ProdutosUnipro = [
       aplicacao: 'Colagem e fixação de espelhos e vidros em diferentes superfícies da construção civil, não produzindo manchas ou qualquer outro tipo de alteração.',
       imagemDoProduto: "/imagens/Produtos/Fixa_Espelho - UNIPRO.png",
       imagemProductAlt: "UNIPRO Fixa Espelho",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_espelho.pdf",
       fispq:"/Arquivos/FISPQ_Fixa_Espelho.pdf"
     },
@@ -73,8 +68,7 @@ const ProdutosUnipro = [
       disponivel: 'Tubos 400g / Sachê 820g',
       aplicacao: 'Superfícies lisas e porosas, alvenaria, madeira, mármore e granitos, espelhos, vidro, alumínio, aço, espelhos, azulejos entre outras superfícies da construção civil.',
       imagemDoProduto: "/imagens/Produtos/Fixa_Tudo - UNIPRO.png",
-      imagemProductAlt: "UNIPRO Tudo Espelho",
-      rota: "/produtos",
+      imagemProductAlt: "UNIPRO Fixa Tudo",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_tudo.pdf",  // baixar
       fispq:"/Arquivos/FISPQ_Fixa_tudo.pdf" // baixar
     },
@@ -87,7 +81,6 @@ const ProdutosUnipro = [
       aplicacao: 'Fixação de cubas metálicas e de cerâmicas em pias de mármores e de granitos.',
       imagemDoProduto: "/imagens/Produtos/Fixa_Cuba - UNIPRO.png",
       imagemProductAlt: "UNIPRO Cuba Espelho",
-      rota: "/produtos",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_Fixa_cuba.pdf",
       fispq:"/Arquivos/FISPQ_Fixa_Cuba.pdf"
     },
