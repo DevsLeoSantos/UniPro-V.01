@@ -9,7 +9,7 @@ import ProdutosUnipro from "../../data";
 //Estilo
 import "./Produtos.css";
 
-type IProdutos = {
+export type IProdutos = {
   nome: string;
   imagemUrl: string;
   fichaTecnicaUrl?: string;
