@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
+    
 }
 
 .Conteiner__imgContato img {
@@ -52,44 +52,49 @@
 .Bnt__Msg {
     background-color: var(--side-bg-color);
     color: var(--main-bg-color);
-    font-size: 1.5rem;
-    padding: 0rem 2rem;
-    height: 3rem;
     border-style: none;
+    font-size: 1.5rem;
     border-radius: 0.3rem;
     margin-top: 1.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0rem;
+    height: 3rem;
+    width: 75%;
 }
 
 @media screen and (max-width: 350px) {
-    
+
     .Conteiner__imgContato img {
         height: 7rem;
     }
-    
+
     .CaixaMsg__input {
         height: 5rem;
         width: 15rem;
     }
-    
+
     .CaixaMsg__input textarea {
         width: 100%;
         font-size: 0.7rem;
-        
+
     }
+
     .Form__Contato h1 {
         font-size: 2rem;
     }
-    
+
     .Form__Contato p {
         font-size: 0.8rem;
         padding-left: 2rem;
         width: 90%;
     }
-    
+
     .Bnt__Msg {
         font-size: 1rem;
-        padding: 0rem 2rem;
+        padding: 0rem;
         height: 2rem;
+        width: 85%;
     }
 }
 
@@ -130,10 +135,8 @@
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        padding: 2rem 2rem;
-        height: 3rem;
-        border-style: none;
-        border-radius: 0.3rem;
+        width: 79%;
+        height: 4rem;
     }
 }
 
@@ -148,13 +151,14 @@
         align-items: center;
         width: 100%;
         margin-bottom: 1rem;
-        /* background-image: url(/public/imagens/BgBanner/bubble.svg);
+        /* background-image: url(/imagens/BgBanner/Decore.svg);
         background-repeat: no-repeat;
-        top: 0px;
-        background-size: 50rem; */
-       
-    } 
-    .Conteiner__CaixaTextoSide{
+        top: 0;
+        right: 0;
+        background-size: contain; */
+    }
+
+    .Conteiner__CaixaTextoSide {
         background-color: wheat;
         width: 50;
     }
@@ -194,11 +198,13 @@
     }
 
     .Bnt__Msg {
-        margin-top: 0.5rem;
-        height: 4rem;
+        background-color: s;
+        margin-top: 1.5rem;
+        height: 3rem;
         font-size: 1rem;
-        padding: 0rem ;
- 
+        padding: 0rem;
+        width: 57%;
+
     }
 }
 
@@ -207,17 +213,18 @@
 @media screen and (min-width: 1700px) {
     .Conteiner__Contato {
         height: 50rem;
-    } 
+    }
 
     .Conteiner__imgContato img {
         height: 40rem;
     }
+
     .CaixaMsg__input textarea {
         border-radius: 0.5rem;
         font-size: 1rem;
         max-height: 100%;
         min-height: 100%;
-        
+
     }
 
     .Form__Contato h1 {

@@ -23,14 +23,13 @@ const Contats = () => {
   const [cidade, setCidade] = useState("");
   const [mensagen, setMensagen] = useState("");
   let MsgList = [""];
+  const AlertCliente = "Ola! " + nome + " Em breve retornaremos contato";
 
   const aoEscreverMsg = (e: any) => {
     setMensagen(e.target.value);
   };
   const aoSubmeter = async (e: any) => {
     e.preventDefault();
-
-    MsgList = [nome, email, telefone, mensagen, cidade];
 
     await api
       .post("/contatos", {
@@ -41,7 +40,7 @@ const Contats = () => {
         cidade,
       })
       .then(() => {
-        alert("Em breve retornaremos contato");
+        alert(AlertCliente);
       });
 
     setNome("");
