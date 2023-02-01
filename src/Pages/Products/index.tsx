@@ -4,7 +4,7 @@ import { api } from "../../api/api";
 import Produtos from "../../Components/Produtos";
 
 //Dados
-import ProdutosUnipro from "../../data";
+import ProdutosUnipro from "../../data/ProdutosDados";
 
 //Estilo
 import "./Produtos.css";

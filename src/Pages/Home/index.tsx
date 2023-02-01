@@ -12,7 +12,7 @@ import LogoDevolução from "/imagens/Logos/IconDevolução.svg";
 import LogoAtendimento from "/imagens/Logos/IconAtendimento.svg";
 
 //Dados
-import ProdutosUnipro from "../../data";
+import ProdutosUnipro from "../../data/ProdutosDados";
 
 //Estilos
 import "./Home.css";

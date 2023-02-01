@@ -7,6 +7,7 @@ import ImgContato from "/imagens/BgBanner/ContatoBanner.svg";
 
 import CaixaTexto from "../../Components/CaixaTexto";
 import { api } from "../../api/api";
+import { toast } from "react-toastify";
 
 const Contats = () => {
   const MensagemFull = [
@@ -17,6 +18,11 @@ const Contats = () => {
       mensagen: String,
     },
   ];
+
+
+
+
+  
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
@@ -40,7 +46,7 @@ const Contats = () => {
         cidade,
       })
       .then(() => {
-        alert(AlertCliente);
+        toast.success("Ola! " + nome + " \nEm breve retornaremos contato")
       });
 
     setNome("");

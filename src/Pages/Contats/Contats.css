@@ -151,15 +151,10 @@
         align-items: center;
         width: 100%;
         margin-bottom: 1rem;
-        /* background-image: url(/imagens/BgBanner/Decore.svg);
-        background-repeat: no-repeat;
-        top: 0;
-        right: 0;
-        background-size: contain; */
     }
 
     .Conteiner__CaixaTextoSide {
-        background-color: wheat;
+        background-color: rgb(255, 255, 255);
         width: 50;
     }
 
