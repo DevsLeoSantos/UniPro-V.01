@@ -46,7 +46,7 @@ const Contats = () => {
         cidade,
       })
       .then(() => {
-        toast.success("Ola! " + nome + " \nEm breve retornaremos contato")
+        toast.success(AlertCliente)
       });
 
     setNome("");
