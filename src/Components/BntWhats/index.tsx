@@ -1,5 +1,3 @@
-
-
 //Estilo
 import "./BntWhats.css"
 

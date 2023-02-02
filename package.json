@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.2.3",
     "bootstrap": "^5.2.3",
@@ -18,7 +19,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.2",
     "react-toastify": "^9.1.1",
-    "reactstrap": "^9.1.5"
+    "reactstrap": "^9.1.5",
+    "sim": "^1.0.18",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

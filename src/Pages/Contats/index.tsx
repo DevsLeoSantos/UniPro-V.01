@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contats.css";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import ImgContato from "/imagens/BgBanner/ContatoBanner.svg";
 
@@ -77,19 +77,17 @@ const Contats = () => {
             Digita={nome}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setNome(Digita)
-            }
-          />
+            }/>
           <CaixaTexto
             id="Email"
             label="Email"
             type="Email"
             placeholder="Example@Unipro.com.br"
-            icon="./imagens/Logos/Msg.svg"
+            icon="./imagens/Logos/Mail.svg"
             Digita={email}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setEmail(Digita)
-            }
-          />
+            }/>
           <CaixaTexto
             id="Cidade"
             label="Cidade"
@@ -99,8 +97,7 @@ const Contats = () => {
             Digita={cidade}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setCidade(Digita)
-            }
-          />
+            }/>
           <CaixaTexto
             id="Telefone"
             label="Telefone"
@@ -110,8 +107,8 @@ const Contats = () => {
             Digita={telefone}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setTelefone(Digita)
-            }
-          />
+            }/>
+
           <div className="Conteiner_CaixaTexto">
             <div className="CaixaTexto">
               <label htmlFor="msg">Mensagem</label>

@@ -20,5 +20,10 @@
     margin-top: 1px
 }
 
+@media screen and (max-width: 650px) {
+    .Conteiner__BntWhats{
+        display: none;
+    }
+}
 
 

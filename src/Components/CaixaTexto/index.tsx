@@ -1,6 +1,3 @@
-//Bibliotecas
-import React from 'react';
-
 //Estilos
 import "./CaixaTexto.css"
 

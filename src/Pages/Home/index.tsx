@@ -103,7 +103,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section data-aos="fade-left" className="conteiner__Newsletter">
+      <section data-aos="fade-top " className="conteiner__Newsletter">
         <h1>Receba Promoções</h1>
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 

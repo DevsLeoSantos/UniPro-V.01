@@ -1,6 +1,8 @@
 //Bibliotecas
 import Axios from "axios";
-import AOS from "aos";
+import AOS from "aos"
+
+
 
 //Componentes
 import Footer from "./Components/Fotter";
@@ -14,7 +16,7 @@ import "react-toastify/dist/ReactToastify.min.css"
 
 
 
-function App() {  
+function App() {
   AOS.init();
 
   return (
@@ -22,7 +24,7 @@ function App() {
       <NavBar />
       <Footer />
       <BntWhats />
-      <ToastContainer/> 
+      <ToastContainer />
     </div>
   );
 }

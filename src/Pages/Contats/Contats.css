@@ -4,7 +4,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+}
+
+.Conteiner__CaixaTexto {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
 .Conteiner__imgContato img {
@@ -14,10 +19,11 @@
 
 .CaixaMsg__input {
     height: 10rem;
-    width: 20rem;
+    width: 100%;
     border-radius: 0.3rem;
     border: 0.1rem solid;
-    border-color: rgb(84, 84, 84);
+    border-color: rgb(84, 84, 84)
+
 }
 
 .CaixaMsg__input textarea {
@@ -26,12 +32,246 @@
     padding: 0.1rem 0.7rem;
     border: none;
     resize: none;
+
 }
 
 .Form__Contato {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+.Form__Contato h1 {
+    color: var(--main-tx-color);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.Form__Contato p {
+    width: 70%;
+    text-align: justify;
+    color: var(--side-tx-color);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.Bnt__Msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--side-bg-color);
+    color: var(--main-bg-color);
+    border-style: none;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    height: 3rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 350px) {
+
+    .Conteiner__imgContato img {
+        height: 7rem;
+    }
+
+    .CaixaMsg__input {
+        height: 5rem;
+    }
+
+    .CaixaMsg__input textarea {
+        font-size: 0.7rem;
+    }
+
+    .Form__Contato h1 {
+        font-size: 2rem;
+    }
+
+    .Form__Contato p {
+        font-size: 0.8rem;
+        padding-left: 2rem;
+        width: 90%;
+    }
+
+    .Bnt__Msg {
+        font-size: 1rem;
+        padding: 0rem;
+        height: 2rem;
+    }
+}
+
+
+/* Responsividade Tablet */
+
+@media screen and (min-width: 700px) {
+    .Conteiner__imgContato img {
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .Form__Contato h1 {
+        font-size: 4rem;
+        padding-left: 3rem;
+    }
+
+    .Form__Contato p {
+        font-size: 1.5rem;
+    }
+
+    .CaixaMsg__input {
+        height: 15rem;
+        border: 0.2rem solid;
+    }
+
+    .CaixaMsg__input textarea {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .Bnt__Msg {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+}
+
+/* Responsividade Notebook */
+
+@media screen and (min-width: 1200px) {
+    .Conteiner__Contato {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .Conteiner__CaixaTextoSide {
+        background-color: rgb(255, 255, 255);
+        width: 50;
+    }
+
+    .Conteiner__imgContato img {
+        height: 25rem;
+        margin-bottom: 0rem;
+    }
+
+    .CaixaMsg__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        border: 0.1rem solid;
+        border-color: rgb(84, 84, 84);
+    }
+
+    .CaixaMsg__input textarea {
+        font-size: 1rem;
+    }
+
+    .Form__Contato h1 {
+        
+        font-size: 2.5rem;
+        padding: 0;
+        width: 80%;
+    }
+
+    .Form__Contato p {
+        font-size: 1rem;
+        padding: 0;
+        width: 80%;
+        padding-bottom: 0rem;
+    }
+
+    .Bnt__Msg {
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade Desktop */
+
+@media screen and (min-width: 1700px) {
+    .Conteiner__Contato {
+        height: 50rem;
+    }
+
+    .Conteiner__imgContato img {
+        height: 40rem;
+    }
+
+    .CaixaMsg__input textarea {
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        max-height: 100%;
+        min-height: 100%;
+
+    }
+
+    .Form__Contato h1 {
+        font-size: 3rem;
+    }
+
+    .Form__Contato p {
+        font-size: 1rem;
+        padding-left: 3rem;
+    }
+
+    .Bnt__Msg {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+/* .Conteiner__Contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: cadetblue;
+    
+}
+
+.Conteiner__imgContato img {
+    height: 14rem;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 244, 252);
+}
+
+.CaixaMsg__input {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid;
+    border-color: rgb(84, 84, 84);
+    
+}
+
+.CaixaMsg__input textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem 0.7rem;
+    border: none;
+    resize: none;
+    
+}
+
+.Form__Contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
 }
 
 .Form__Contato h1 {
@@ -98,7 +338,7 @@
     }
 }
 
-/* Responsividade Tablet */
+/* Responsividade Tablet 
 
 @media screen and (min-width: 700px) {
     .Conteiner__imgContato img {
@@ -140,7 +380,7 @@
     }
 }
 
-/* Responsividade Notebook */
+/* Responsividade Notebook 
 
 @media screen and (min-width: 1200px) {
     .Conteiner__Contato {
@@ -203,7 +443,7 @@
     }
 }
 
-/* Responsividade Desktop */
+/* Responsividade Desktop 
 
 @media screen and (min-width: 1700px) {
     .Conteiner__Contato {
@@ -235,4 +475,4 @@
         font-size: 1.5rem;
         padding: 0rem 2rem;
     }
-}
+} */
