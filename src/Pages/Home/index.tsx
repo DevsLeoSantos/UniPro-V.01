@@ -108,14 +108,14 @@ const Home = () => {
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 
         <form onSubmit={aoSalvar} className="email__Newsletter">
-          <input
+          {/* <input
             required
             onChange={aoDigitar}
             value={news}
             placeholder="(00) 00000-0000"
             type="tel"
-          />
-          <button>Se inscrever</button>
+          /> */}
+          <a href="/contato">Se inscrever</a>
         </form>
         <p id="text__Newsletter">
           Nós nunca enviaremos spam para você. Apenas informações úteis

@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import "./Contats.css";
 
 
-
 import ImgContato from "/imagens/BgBanner/ContatoBanner.svg";
+import * as yup from "yup"
 
 import CaixaTexto from "../../Components/CaixaTexto";
 import { api } from "../../api/api";
 import { toast } from "react-toastify";
+import { phoneNumber } from "../../utils/validations";
 
-const Contats = () => {   
-  
-
-
+const Contats = () => {
 
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
@@ -20,12 +18,19 @@ const Contats = () => {
   const [cidade, setCidade] = useState("");
   const [mensagen, setMensagen] = useState("");
   const AlertCliente = "Ola! " + nome + " Em breve retornaremos contato";
+  const [status, setStatus] = useState({
+    type: '',
+    mensagen: '',
+  });
 
   const aoEscreverMsg = (e: any) => {
     setMensagen(e.target.value);
   };
   const aoSubmeter = async (e: any) => {
     e.preventDefault();
+
+    // if (!(await validate())) return;
+
 
     await api
       .post("/contatos", {
@@ -45,6 +50,26 @@ const Contats = () => {
     setCidade("");
     setMensagen("");
   };
+  // async function validate() {
+  //   let shema = yup.object().shape({
+  //     Nome: yup.string().required(),
+  //     Email: yup.string().email().required(),
+  //     Cidade: yup.string().required(),
+  //     Telefone: yup.string().matches(phoneNumber).required(),
+  //     msg: yup.string().required(),
+  //   });
+  //   try {
+
+  //   } catch (error) {
+  //     setStatus({
+  //       type: 'err',
+  //       mensagen: '',
+  //     })
+  //   }
+
+  // }
+
+
 
   return (
     <div className="Conteiner__Contato">
@@ -67,7 +92,7 @@ const Contats = () => {
             Digita={nome}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setNome(Digita)
-            }/>
+            } />
           <CaixaTexto
             id="Email"
             label="Email"
@@ -77,7 +102,7 @@ const Contats = () => {
             Digita={email}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setEmail(Digita)
-            }/>
+            } />
           <CaixaTexto
             id="Cidade"
             label="Cidade"
@@ -87,7 +112,7 @@ const Contats = () => {
             Digita={cidade}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setCidade(Digita)
-            }/>
+            } />
           <CaixaTexto
             id="Telefone"
             label="Telefone"
@@ -97,7 +122,7 @@ const Contats = () => {
             Digita={telefone}
             aoAlterado={(Digita: React.SetStateAction<string>) =>
               setTelefone(Digita)
-            }/>
+            } />
 
           <div className="Conteiner_CaixaTexto">
             <div className="CaixaTexto">

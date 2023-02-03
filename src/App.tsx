@@ -2,8 +2,6 @@
 import Axios from "axios";
 import AOS from "aos"
 
-
-
 //Componentes
 import Footer from "./Components/Fotter";
 import BntWhats from "./Components/BntWhats";
