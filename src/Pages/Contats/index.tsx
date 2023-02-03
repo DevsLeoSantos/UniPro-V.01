@@ -9,26 +9,16 @@ import CaixaTexto from "../../Components/CaixaTexto";
 import { api } from "../../api/api";
 import { toast } from "react-toastify";
 
-const Contats = () => {
-  const MensagemFull = [
-    {
-      nome: String,
-      email: String,
-      telefone: String,
-      mensagen: String,
-    },
-  ];
-
-
-
-
+const Contats = () => {   
   
+
+
+
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
   const [cidade, setCidade] = useState("");
   const [mensagen, setMensagen] = useState("");
-  let MsgList = [""];
   const AlertCliente = "Ola! " + nome + " Em breve retornaremos contato";
 
   const aoEscreverMsg = (e: any) => {
