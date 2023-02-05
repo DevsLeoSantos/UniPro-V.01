@@ -40,7 +40,7 @@ const Products = () => {
 
   return (
     <div>
-      {produtos.map((produto) => {
+      {/* {produtos.map((produto) => {
         return (
           <Produtos
             produtoLinha={produto.categoria.nome}
@@ -51,7 +51,26 @@ const Products = () => {
             FichaTec={produto.fichaTecnicaUrl}
           />
         );
+      })} */}
+      {ProdutosUnipro.map((produto) => {
+        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, fichaTécnica, fispq } = produto;
+        return (
+          <div>
+            <Produtos
+              produtoLinha={linha}
+              produtoBgImagem={imgbgproduto}
+              produtoAplicacao={aplicacao}
+              produtoImagem={imagemDoProduto}
+              productAlt={imagemProductAlt}
+              produtoNome={nome}
+              produtoDescricao={descricao}
+              Fispq={fispq}
+              FichaTec={fichaTécnica}
+            />
+          </div>
+        )
       })}
+
     </div>
   );
 };

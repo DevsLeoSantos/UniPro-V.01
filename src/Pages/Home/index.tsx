@@ -23,17 +23,9 @@ import { IProdutos } from "../Products";
 import { api } from "../../api/api";
 
 const Home = () => {
-  const [news, setNews] = useState("");
   const [produtos, setProdutos] = useState<IProdutos[]>([]);
-
-  const aoDigitar = (e: any) => {
-    setNews(e.target.value);
-  };
-  const aoSalvar = (e: any) => {
-    e.preventDefault();
-    setNews("");
-  };
   async function getProdutos() {
+
     var produtos = await api.get("/produto");
     return produtos.data as IProdutos[];
   }
@@ -63,7 +55,7 @@ const Home = () => {
           </a>
         </div>
         <div className="Box__Products">
-          {produtos.map((produto) => {
+          {/* {produtos.map((produto) => {
             return (
               <CardProducts
                 img={produto.imagemUrl}
@@ -71,7 +63,22 @@ const Home = () => {
                 line={produto.categoria.nome}
               />
             );
+          })} */}
+          {ProdutosUnipro.map((produto) => {
+            const { linha, imgbgproduto, imagemDoProduto, nome} = produto;
+
+            return (
+              <CardProducts
+                img={imagemDoProduto}
+                imgBg={imgbgproduto}
+                text={nome}
+                line={linha}
+              />
+            )
           })}
+
+
+
         </div>
       </section>
 
@@ -107,7 +114,7 @@ const Home = () => {
         <h1>Receba Promoções</h1>
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 
-        <form onSubmit={aoSalvar} className="email__Newsletter">
+        <form className="email__Newsletter">
           {/* <input
             required
             onChange={aoDigitar}

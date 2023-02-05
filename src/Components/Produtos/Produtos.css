@@ -177,6 +177,9 @@
     .Produtos__main {
         display: none;
     }
+    .Produtos__Mobile{
+        display: none;
+    }
 
     .Desk_Conteiner_BgImg {
         position: absolute;
