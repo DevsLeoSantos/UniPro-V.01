@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className="Conteiner__text_item_Footer">
-                    <p>© 2020 All rights reserved Unipro</p>
+                    <p>© 2023 All rights reserved Unipro</p>
                 </div>
 
             </section>

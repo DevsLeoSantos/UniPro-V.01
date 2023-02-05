@@ -30,8 +30,11 @@
 }
 
 .Conteiner__menu_Footer a {
-    
     font-size: 0.9rem;
+    color: var(--main-tx-color);
+}
+.Conteiner__menu_Footer a:hover {
+
     color: var(--main-tx-color);
 }
 
