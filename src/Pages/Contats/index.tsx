@@ -128,10 +128,14 @@ const Contats = () => {
     setSelectedCity(city);
     setContatoCliente({ ...ContatoCliente, ["Cidade"]: city })
   }
-
+  const config = {
+    headers:{
+      "x-api-key": "adoleta"
+    }
+  };
   const valueInput = (e: { target: { name: any; value: any; }; }) => setContatoCliente({ ...ContatoCliente, [e.target.name]: e.target.value });
   const Clientejson = JSON.stringify(ContatoCliente);
-  Clientejson.toLowerCase()
+  const ClientejsonLower = Clientejson.toLowerCase()
   const aoSubmeter = async (e: any) => {
     e.preventDefault();
     if (!(await validate())) return;
@@ -141,8 +145,8 @@ const Contats = () => {
       toast.success("Sua mensagem foi enviada com sucesso!")
       await api
         .post("/contatos", {
-          Clientejson
-        })
+          ClientejsonLower
+        },config)
         .then(() => {
           toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
         });
