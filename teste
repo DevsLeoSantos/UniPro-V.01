@@ -1,0 +1,18 @@
+useEffect(() => {
+    if (selectedUf === "0") {
+        return;
+    }
+    axios
+        .get(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUf}/municipios`)
+        .then((response) => {
+            setCities(response.data);
+        });
+}, [se]);
+
+useEffect(() => {
+    axios
+        .get("https://servicodados.ibge.gov.br/api/v1/localidades/estados/")
+        .then((response) => {
+            setUfs(response.data);
+        });
+}, []);

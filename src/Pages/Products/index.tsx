@@ -34,7 +34,6 @@ const Products = () => {
   useEffect(() => {
     getProdutos().then((data) => {
       setProdutos(data);
-      console.log("produtos =>", produtos);
     });
   }, []);
 

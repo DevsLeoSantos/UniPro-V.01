@@ -221,11 +221,12 @@
     }
 
     .distribuição_decada {
-        width: 40%;
+        width: 50%;
     }
 
     .distribuição_decada h1 {
         font-size: 2rem;
+        padding: 0.5rem;
     }
 
     .distribuição_text h1 {

@@ -8,12 +8,13 @@ import iconTelefone from "/imagens/Logos/PhoneCall.svg";
 import * as yup from "yup"
 import { api } from "../../api/api";
 import { toast } from "react-toastify"
-import { ChangeEvent, useEffect, useState } from "react";
 import axios from "axios";
+import { ChangeEvent, useEffect, useState } from "react";
 
 //Estilos
 import "./Contats.css";
 import "./CaixaTexto.css"
+import { ValidatePhone } from "../../utils/validations";
 
 type IBGEUFResponse = {
   id: number;
@@ -25,20 +26,43 @@ type IBGECITYResponse = {
   nome: string;
 };
 
+
+
 const Contats = () => {
 
-  const handlePhone = (event: any) => {
-    let input = event.target
-    input.value = phoneMask(input.value)
-  }
+  const [ufs, setUfs] = useState<IBGEUFResponse[]>([]);
+  const [cities, setCities] = useState<IBGECITYResponse[]>([]);
+  const [selectedUf, setSelectedUf] = useState("0");
+  const [selectedCity, setSelectedCity] = useState("0");
 
-  const phoneMask = (value: any) => {
-    if (!value) return ""
-    value = value.replace(/\D/g, "")
-    value = value.replace(/^(\d{2})(\d)/g, "($1) $2")
-    value = value.replace(/(\d)(\d{4})$/, "$1-$2")
-    return value
-  }
+  function handleSelectUf(event: ChangeEvent<HTMLSelectElement>) {
+    const uf = event.target.value;
+    setSelectedUf(uf);
+  };
+
+  function handleSelectCity(event: ChangeEvent<HTMLSelectElement>) {
+    const city = event.target.value;
+    setSelectedCity(city);
+    console.log(city)
+  };
+  useEffect(() => {
+    if (selectedUf === "0") {
+      return;
+    }
+    axios
+      .get(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUf}/municipios`)
+      .then((response) => {
+        setCities(response.data);
+      });
+  }, [selectedUf]);
+
+  useEffect(() => {
+    axios
+      .get("https://servicodados.ibge.gov.br/api/v1/localidades/estados/")
+      .then((response) => {
+        setUfs(response.data);
+      });
+  }, []);
 
   async function validate() {
     let schema = yup.object().shape({
@@ -54,12 +78,9 @@ const Contats = () => {
 
       NumeroTelefone: yup
         .string()
-        // .required('Erro: Necessário preencher o campo Telefone')
-        .max(15, "A Mensagem precisa ter menos de 350 caracteres"),
-
+        .required('Erro: Necessário preencher o campo Telefone'),
       Mensagem: yup
         .string()
-        .required('Erro: Necessário preencher o campo Mensagem')
         .max(350, "A Mensagem precisa ter menos de 350 caracteres"),
 
     });
@@ -74,10 +95,6 @@ const Contats = () => {
       return false;
     }
   }
-  const [ufs, setUfs] = useState<IBGEUFResponse[]>([]);
-  const [cities, setCities] = useState<IBGECITYResponse[]>([]);
-  const [selectedUf, setSelectedUf] = useState("0");
-  const [selectedCity, setSelectedCity] = useState("0");
 
   const [ContatoCliente, setContatoCliente] = useState({
     Nome: "",
@@ -93,49 +110,11 @@ const Contats = () => {
     mensagem: "",
   });
 
-
-
-  useEffect(() => {
-    if (selectedUf === "0") {
-      return;
-    }
-    axios
-      .get(
-        `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUf}/municipios`
-      )
-      .then((response) => {
-        setCities(response.data);
-      });
-  });
-
-  useEffect(() => {
-    axios
-      .get("https://servicodados.ibge.gov.br/api/v1/localidades/estados/")
-      .then((response) => {
-        setUfs(response.data);
-      });
-  }, [selectedUf]);
-
-
-  function handleSelectUf(event: ChangeEvent<HTMLSelectElement>) {
-    const uf = event.target.value;
-    setSelectedUf(uf);
-    // setContatoCliente({ ...ContatoCliente, ["Estado"]: uf })
-  }
-
-  function handleSelectCity(event: ChangeEvent<HTMLSelectElement>) {
-    const city = event.target.value;
-    setSelectedCity(city);
-    setContatoCliente({ ...ContatoCliente, ["Cidade"]: city })
-  }
-  const config = {
-    headers:{
-      "x-api-key": "adoleta"
-    }
-  };
   const valueInput = (e: { target: { name: any; value: any; }; }) => setContatoCliente({ ...ContatoCliente, [e.target.name]: e.target.value });
+
   const Clientejson = JSON.stringify(ContatoCliente);
   const ClientejsonLower = Clientejson.toLowerCase()
+
   const aoSubmeter = async (e: any) => {
     e.preventDefault();
     if (!(await validate())) return;
@@ -143,13 +122,13 @@ const Contats = () => {
     if (saveDataForm) {
       console.log(Clientejson);
       toast.success("Sua mensagem foi enviada com sucesso!")
+
       await api
-        .post("/contatos", {
-          ClientejsonLower
-        },config)
+        .post("/contatos", JSON.parse(ClientejsonLower))
         .then(() => {
           toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
         });
+
       setContatoCliente({
         Nome: "",
         Email: "",
@@ -170,8 +149,6 @@ const Contats = () => {
       NumeroTelefone: "",
       Mensagem: "",
     });
-    setSelectedUf("0");
-    setSelectedCity("0");
   };
   return (
     <div className="Conteiner__Contato">
@@ -186,7 +163,6 @@ const Contats = () => {
         </p>
 
         {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
-        {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{}</p> : ""}
 
         <div className="Conteiner__CaixaTexto">
           <div className='CaixaTexto'>
@@ -203,6 +179,7 @@ const Contats = () => {
               <img src={iconEmail} alt="Icone" />
             </div>
           </div>
+
           <div className='CaixaTexto'>
             <div className='CaixaCidade'>
               <div className='CaixaUf'>
@@ -236,10 +213,14 @@ const Contats = () => {
               </div>
             </div>
           </div>
+
+
           <div className='CaixaTexto'>
             <label htmlFor='Telefone'>Telefone</label>
             <div className='CaixaTexto__input'>
-              <input onKeyUp={handlePhone}
+              <input
+                // onKeyUp={handlePhone}
+
                 name="NumeroTelefone"
                 value={ContatoCliente.NumeroTelefone}
                 onChange={valueInput}
@@ -249,6 +230,8 @@ const Contats = () => {
               <img src={iconTelefone} alt="Icone" />
             </div>
           </div>
+
+
           <div className="Conteiner_CaixaTexto">
             <div className="CaixaTexto">
               <label htmlFor="Mensagem">Mensagem</label>

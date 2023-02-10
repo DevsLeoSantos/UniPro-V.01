@@ -41,7 +41,6 @@ const Home = () => {
   useEffect(() => {
     getProdutos().then((data) => {
       setProdutos(data);
-      console.log("produtos =>", produtos);
     });
   }, []);
 
