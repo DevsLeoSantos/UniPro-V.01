@@ -6,18 +6,14 @@ import iconTelefone from "/imagens/Logos/PhoneCall.svg";
 
 //Bibliotecas
 import * as yup from "yup"
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useForm } from "react-hook-form";
 import { api } from "../../api/api";
 import { toast } from "react-toastify"
 import { ChangeEvent, useEffect, useState } from "react";
 import axios from "axios";
-import { phoneNumber, emailClient } from "../../utils/validations";
 
 //Estilos
 import "./Contats.css";
 import "./CaixaTexto.css"
-
 
 type IBGEUFResponse = {
   id: number;
@@ -30,8 +26,6 @@ type IBGECITYResponse = {
 };
 
 const Contats = () => {
-
-
 
   const handlePhone = (event: any) => {
     let input = event.target
@@ -46,11 +40,6 @@ const Contats = () => {
     return value
   }
 
-
-
-
-
-
   async function validate() {
     let schema = yup.object().shape({
       Nome: yup
@@ -63,9 +52,9 @@ const Contats = () => {
         .email('Erro: Necessário preencher um Email Valido!')
         .required('Erro: Necessário preencher o campo Email'),
 
-      Telefone: yup
+      NumeroTelefone: yup
         .string()
-        .required('Erro: Necessário preencher o campo Telefone')
+        // .required('Erro: Necessário preencher o campo Telefone')
         .max(15, "A Mensagem precisa ter menos de 350 caracteres"),
 
       Mensagem: yup
@@ -89,18 +78,21 @@ const Contats = () => {
   const [cities, setCities] = useState<IBGECITYResponse[]>([]);
   const [selectedUf, setSelectedUf] = useState("0");
   const [selectedCity, setSelectedCity] = useState("0");
+
   const [ContatoCliente, setContatoCliente] = useState({
     Nome: "",
     Email: "",
-    Estado: "",
+    // Estado: "",
     Cidade: "",
-    Telefone: "",
+    NumeroTelefone: "",
     Mensagem: "",
   });
+
   const [status, setStatus] = useState({
     type: '',
     mensagem: "",
   });
+
 
 
   useEffect(() => {
@@ -128,7 +120,7 @@ const Contats = () => {
   function handleSelectUf(event: ChangeEvent<HTMLSelectElement>) {
     const uf = event.target.value;
     setSelectedUf(uf);
-    setContatoCliente({ ...ContatoCliente, ["Estado"]: uf })
+    // setContatoCliente({ ...ContatoCliente, ["Estado"]: uf })
   }
 
   function handleSelectCity(event: ChangeEvent<HTMLSelectElement>) {
@@ -139,48 +131,43 @@ const Contats = () => {
 
   const valueInput = (e: { target: { name: any; value: any; }; }) => setContatoCliente({ ...ContatoCliente, [e.target.name]: e.target.value });
   const Clientejson = JSON.stringify(ContatoCliente);
-
+  Clientejson.toLowerCase()
   const aoSubmeter = async (e: any) => {
     e.preventDefault();
     if (!(await validate())) return;
-
     const saveDataForm = true;
-
     if (saveDataForm) {
       console.log(Clientejson);
       toast.success("Sua mensagem foi enviada com sucesso!")
-      // await api
-      //   .post("/contatos", {
-      //     Clientejson
-      //   })
-      //   .then(() => {
-      //     toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
-      //   });
+      await api
+        .post("/contatos", {
+          Clientejson
+        })
+        .then(() => {
+          toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
+        });
       setContatoCliente({
         Nome: "",
         Email: "",
-        Estado: "",
+        // Estado: "",
         Cidade: "",
-        Telefone: "",
+        NumeroTelefone: "",
         Mensagem: "",
       });
     }
     else {
       toast.error("Erro: Sua mensagem não foi enviada!")
     }
-
-
     setContatoCliente({
       Nome: "",
       Email: "",
-      Estado: "",
+      // Estado: "",
       Cidade: "",
-      Telefone: "",
+      NumeroTelefone: "",
       Mensagem: "",
     });
     setSelectedUf("0");
     setSelectedCity("0");
-
   };
   return (
     <div className="Conteiner__Contato">
@@ -195,9 +182,9 @@ const Contats = () => {
         </p>
 
         {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
+        {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{}</p> : ""}
 
         <div className="Conteiner__CaixaTexto">
-
           <div className='CaixaTexto'>
             <label htmlFor='Nome'>Nome</label>
             <div className='CaixaTexto__input'>
@@ -205,7 +192,6 @@ const Contats = () => {
               <img src={iconNome} alt="Icone" />
             </div>
           </div>
-
           <div className='CaixaTexto'>
             <label htmlFor='Email'>Email</label>
             <div className='CaixaTexto__input'>
@@ -213,15 +199,11 @@ const Contats = () => {
               <img src={iconEmail} alt="Icone" />
             </div>
           </div>
-
           <div className='CaixaTexto'>
-
             <div className='CaixaCidade'>
-
               <div className='CaixaUf'>
                 <label htmlFor='Estado'>Estado</label>
                 <select
-                  required
                   name="Estado"
                   id="Estado"
                   onChange={handleSelectUf}
@@ -230,14 +212,11 @@ const Contats = () => {
                   {ufs.map((uf) => (
                     <option key={uf.id} value={uf.sigla}>{uf.nome}</option>
                   ))}
-
                 </select>
               </div>
-
               <div className='CaixaCity'>
                 <label htmlFor='Cidade'>Cidade</label>
                 <select
-                  required
                   name="City"
                   id="City"
                   value={selectedCity}
@@ -253,13 +232,12 @@ const Contats = () => {
               </div>
             </div>
           </div>
-
           <div className='CaixaTexto'>
             <label htmlFor='Telefone'>Telefone</label>
             <div className='CaixaTexto__input'>
               <input onKeyUp={handlePhone}
-                name="Telefone"
-                value={ContatoCliente.Telefone}
+                name="NumeroTelefone"
+                value={ContatoCliente.NumeroTelefone}
                 onChange={valueInput}
                 maxLength={15}
                 placeholder="(00) 00000-0000"
@@ -267,7 +245,6 @@ const Contats = () => {
               <img src={iconTelefone} alt="Icone" />
             </div>
           </div>
-
           <div className="Conteiner_CaixaTexto">
             <div className="CaixaTexto">
               <label htmlFor="Mensagem">Mensagem</label>
