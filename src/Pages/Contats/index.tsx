@@ -149,6 +149,13 @@ const Contats = () => {
     if (saveDataForm) {
       console.log(Clientejson);
       toast.success("Sua mensagem foi enviada com sucesso!")
+      // await api
+      //   .post("/contatos", {
+      //     Clientejson
+      //   })
+      //   .then(() => {
+      //     toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
+      //   });
       setContatoCliente({
         Nome: "",
         Email: "",
@@ -161,13 +168,8 @@ const Contats = () => {
     else {
       toast.error("Erro: Sua mensagem não foi enviada!")
     }
-    // await api
-    //   .post("/contatos", {
-    //     Clientejson
-    //   })
-    //   .then(() => {
-    //     toast.success("Ola! " + ContatoCliente.Nome + " Em breve retornaremos contato")
-    //   });
+
+
     setContatoCliente({
       Nome: "",
       Email: "",
