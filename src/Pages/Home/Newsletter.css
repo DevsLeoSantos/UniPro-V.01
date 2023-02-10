@@ -1,4 +1,3 @@
-
 .conteiner__Newsletter {
     background-color: #DEDEDE;
     display: flex;
@@ -60,16 +59,19 @@
 
 }
 
+.email__Newsletter a {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
 @media screen and (max-width: 330px) {
     .conteiner__Newsletter h1 {
         font-size: 1.2rem;
     }
+
     .email__Newsletter input {
         height: 2rem;
         width: 70%;
-    }
-    .email__Newsletter a {
-        font-size: 8px;
     }
 }
 

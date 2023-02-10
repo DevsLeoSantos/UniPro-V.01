@@ -62,15 +62,19 @@ const Home = () => {
             Confira nossos Produtos
           </a>
         </div>
-        <div className="Box__Products">
-          {produtos.map((produto) => {
+        <div className='Box__Products'>
+          {ProdutosUnipro.map((produto) => {
+            const { linha, imgbgproduto, imagemDoProduto, nome, imagemProductAlt } = produto;
+
             return (
               <CardProducts
-                img={produto.imagemUrl}
-                text={produto.nome}
-                line={produto.categoria.nome}
+                key={nome}
+                img={imagemDoProduto}
+                imgBg={imgbgproduto}
+                text={nome}
+                line={linha}
               />
-            );
+            )
           })}
         </div>
       </section>

@@ -39,21 +39,28 @@ const Products = () => {
   }, []);
 
   return (
-    <div>
-      {produtos.map((produto) => {
+    <div >
+      {ProdutosUnipro.map((produto) => {
+        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, fichaTécnica, fispq } = produto;
         return (
-          <Produtos
-            produtoLinha={produto.categoria.nome}
-            produtoAplicacao={produto.aplicacao}
-            produtoImagem={produto.imagemUrl}
-            produtoNome={produto.nome}
-            produtoDescricao={produto.descricao}
-            FichaTec={produto.fichaTecnicaUrl}
-          />
-        );
+          <div>
+            <Produtos
+              key={nome}
+              produtoLinha={linha}
+              produtoBgImagem={imgbgproduto}
+              produtoAplicacao={aplicacao}
+              produtoImagem={imagemDoProduto}
+              productAlt={imagemProductAlt}
+              produtoNome={nome}
+              produtoDescricao={descricao}
+              Fispq={fispq}
+              FichaTec={fichaTécnica}
+            />
+          </div>
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default Products;
+export default Products

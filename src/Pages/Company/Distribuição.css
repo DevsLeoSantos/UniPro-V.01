@@ -4,8 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 1rem 0rem;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     background-image: url(/imagens/BgBanner/UniproCaminhao.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +112,7 @@
 
     .Conteiner__distribuição {
         flex-direction: row;
-        gap: 2rem;
+
     }
 
     .distribuição_left {

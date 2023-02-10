@@ -1,33 +1,30 @@
+//Bibliotecas
+import React from 'react';
+
 //Estilos
-import "./CardProducts.css";
+import "./CardProducts.css"
 
 interface PropsCardProducts {
-  img: any;
-  imgBg?: any;
-  text: string;
-  line: string;
+    img: any;
+    imgBg: any;
+    text: string;
+    line: string;
 }
+
 
 const CardProducts = (props: PropsCardProducts) => {
 
-  return (
-    <div className="ConteinerMain__CardProducts">
-      <div className=" swing Conteiner__CardProducts">
-        <div
-          className="CardProducts"
-          style={{ backgroundImage: `url(${props.imgBg})` }}
-        >
-          <img
-            className="CardProducts_Produto"
-            src={props.img}
-            alt={`Unipro ${props.text}`}
-          />
+    return (
+        <div className="ConteinerMain__CardProducts">
+            <div className=" swing Conteiner__CardProducts">
+                <div className="CardProducts" style={{backgroundImage: `url(${props.imgBg})`}}>
+                    <img className='CardProducts_Produto'src={props.img} alt="Unipro Produtos"/>
+                </div>
+                <h1>{props.text}</h1>
+                <p>{props.line}</p>
+                <a href="/produtos">Visualizar</a>
+            </div>
         </div>
-        <h1>{props.text}</h1>
-        <p>{props.line}</p>
-        <a href="/produtos">Visualizar</a>
-      </div>
-    </div>
-  );
-};
+    )
+}
 export default CardProducts;

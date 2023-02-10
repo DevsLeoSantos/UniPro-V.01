@@ -1,0 +1,10 @@
+.Conteriner_SeuProduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.Conteriner_SeuProduto img{
+    width: 100;
+    
+}

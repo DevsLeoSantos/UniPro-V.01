@@ -5,6 +5,7 @@ import BannerCentral from "../../Components/BannerCentral";
 // Estilo
 import "./Company.css";
 import "./Banner.css";
+import "./SeuProduto.css";
 import "./Video.css";
 import "./Maps.css";
 import "./Solucoes.css";
@@ -97,6 +98,13 @@ const Company = () => {
         </div>
       </section>
 
+      <section data-aos="fade-left" className="Conteriner_SeuProduto">
+        <img
+          src="/imagens/ImagensCarrocel/Carrocel2.svg"
+          alt="Seu produto"
+        ></img>
+      </section>
+      
       <section data-aos="fade-left" className="Conteiner__Video">
         <div className="Text_Video">
           <h1>
@@ -119,6 +127,7 @@ const Company = () => {
         img={"/imagens/BgBanner/BgImg2.svg"}
       />
 
+  
       <section data-aos="zoom-in" className="Conteiner__maps">
         <div className="maps">
           <iframe src={map} className="Map" aria-hidden="false"></iframe>
