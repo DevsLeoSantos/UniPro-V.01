@@ -100,7 +100,7 @@ const Company = () => {
 
       <section data-aos="fade-left" className="Conteriner_SeuProduto">
         <img
-          src="/imagens/ImagensCarrocel/Carrocel2.svg"
+          src="/imagens/ImagensCarrocel/Carrocel3.svg"
           alt="Seu produto"
         ></img>
       </section>

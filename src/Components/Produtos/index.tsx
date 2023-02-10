@@ -37,7 +37,7 @@ const Produtos = (props: PropsProdutos) => {
                     <p className="Desk_Conteiner__right_color">Cores:</p>
 
                     <div className="Desk_Conteiner__right_budget">
-                        <a className="Desk_right_budget" href="uniprosf.com.br">Orcarmento</a>
+                        <a className="Desk_right_budget" href="uniprosf.com.br">Orçamento</a>
                         <div className="Desk_Conteiner__right_side">
                             <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
                             <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
@@ -60,7 +60,7 @@ const Produtos = (props: PropsProdutos) => {
                     <h1 className="Produtos__text_line">{props.produtoLinha}</h1>
                 </div>
                 <div className='ConteinerBotao'>
-                    <a className="Produtos__right_budget" href="uniprosf.com.br">Orcarmento</a>
+                    <a className="Produtos__right_budget" href="uniprosf.com.br">Orçamento</a>
                 </div>
                 <div className="Produtos__img">
                     <img src={props.produtoImagem} alt={props.productAlt}></img>

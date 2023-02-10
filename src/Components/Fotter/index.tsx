@@ -1,6 +1,5 @@
 //Bibliotecas
-import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 //Imagens
 import Logo from "/imagens/Logos/LogoUnipro.svg"
@@ -15,6 +14,7 @@ import "./Footer.css"
 const Footer = () => { 
     return (
         <div className="Conteiner__main_Footer">
+            
             <div className="Conteiner__left_Footer">
                 <img src={Logo} alt="Logo Unipro"></img>
             </div>

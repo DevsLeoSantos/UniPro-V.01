@@ -1,6 +1,7 @@
 //Bibliotecas
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import { Link } from 'react-router-dom';
 
 //Estilos
 import "./Hamb.css";
@@ -20,16 +21,16 @@ const Hamb = () => {
 
       <nav className={isToggled ? "nav nav-open" : "nav"} id="nav">
         <li>
-          <a href="/">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <a href="/empresa">Empresa</a>
+          <Link to='/empresa'>Empresa</Link>
         </li>
         <li>
-          <a href="/produtos">Produtos</a>
+          <Link to='/produtos'>Produtos</Link>
         </li>
         <li>
-          <a href="/contato">Contato</a>
+          <Link to='/contato'>Contato</Link>
         </li>
       </nav>
     </div>
