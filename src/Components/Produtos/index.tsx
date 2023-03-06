@@ -1,4 +1,5 @@
 //Estilos
+import { Link } from "react-router-dom";
 import "./Produtos.css"
 
 interface PropsProdutos {
@@ -37,7 +38,7 @@ const Produtos = (props: PropsProdutos) => {
                     <p className="Desk_Conteiner__right_color">Cores:</p>
 
                     <div className="Desk_Conteiner__right_budget">
-                        <a className="Desk_right_budget" href="uniprosf.com.br">Orçamento</a>
+                        <Link className="Desk_right_budget" to="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">Orçamento</Link>
                         <div className="Desk_Conteiner__right_side">
                             <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
                             <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
@@ -60,7 +61,7 @@ const Produtos = (props: PropsProdutos) => {
                     <h1 className="Produtos__text_line">{props.produtoLinha}</h1>
                 </div>
                 <div className='ConteinerBotao'>
-                    <a className="Produtos__right_budget" href="uniprosf.com.br">Orçamento</a>
+                    <Link className="Produtos__right_budget" to='/contato'>Orçamento</Link>
                 </div>
                 <div className="Produtos__img">
                     <img src={props.produtoImagem} alt={props.productAlt}></img>

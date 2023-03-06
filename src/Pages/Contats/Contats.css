@@ -12,6 +12,10 @@
     width: 70%;
 }
 
+.Conteiner__perguntas{
+    width: 80%;
+}
+
 .Conteiner__imgContato img {
     height: 14rem;
     margin-bottom: 1rem;
@@ -74,6 +78,60 @@
     width: 100%;
 }
 
+h1{
+    
+}
+
+.container {
+    box-shadow: 8px 10px 5px #0003;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto 5px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .accordion_item {
+    border-radius: 5px;
+  }
+  
+  .accordion_item:hover {
+    opacity: 0.9;
+  }
+  
+  .accordion_header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .accordion_content {
+    margin-left: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+  }
+  
+  .active {
+    padding-bottom: 10px;
+  }
+  span, .icon {
+    font-weight: 600;
+  }
+  
+  p {
+    text-align: justify;
+  }
+
 @media screen and (max-width: 350px) {
 
     .Conteiner__imgContato img {
@@ -82,6 +140,10 @@
 
     .CaixaMsg__input {
         height: 5rem;
+    }
+
+    .Conteiner__perguntas{
+        width: 50%;
     }
 
     .CaixaMsg__input textarea {
@@ -119,6 +181,10 @@
         padding-left: 3rem;
     }
 
+    .Conteiner__perguntas{
+        width: 70%;
+    }
+
     .Form__Contato p {
         font-size: 1.5rem;
     }
@@ -139,6 +205,81 @@
     }
 }
 
+
+.container.heading{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container .accordion-container{
+    padding: 0 20px;
+}
+
+.container .accordion-container .accordion{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.container .accordion-container .accordion.active .accordion-heading{
+    background: red;
+}
+
+.container .accordion-container .accordion.active .accordion-heading h3{
+    color: #fff;
+}
+
+.container .accordion-container .accordion.active .accordion-heading i{
+    transform: rotate(180deg);
+    transition: transform .2s .1s;
+}
+
+.container .accordion-container .accordion.active .accordion-content{
+    display: block;
+}
+
+.container .accordion-container .accordion .accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    padding: 15px;
+}
+
+.container .accordion-container .accordion .accordion-heading h3{
+    font-size: 20px;
+}
+
+.container .accordion-container .accordion .accordion-heading i{
+    color: #000;
+}
+
+.container .accordion-container .accordion .accordion-content{
+    display: block;
+}
+
+
+.container .accordion-container .accordion .accordion-content{
+    padding: 15px 20px;
+    border: 2px solid #000;
+    font-size: 15px;
+    background: #fff;
+    border-top: 0;
+    display: none;
+    animation: animate .2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+
+@keyframes animate{
+    0%{
+        transform: scaleY(0);
+    }
+}
+
 /* Responsividade Notebook */
 
 @media screen and (min-width: 1200px) {
@@ -150,6 +291,10 @@
         align-items: center;
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .Conteiner__perguntas{
+        width: 80%;
     }
 
     .Conteiner__CaixaTextoSide {
@@ -227,252 +372,3 @@
         font-size: 1.5rem;
     }
 }
-
-
-
-
-
-
-
-/* .Conteiner__Contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: cadetblue;
-    
-}
-
-.Conteiner__imgContato img {
-    height: 14rem;
-    margin-bottom: 1rem;
-    background-color: rgb(0, 244, 252);
-}
-
-.CaixaMsg__input {
-    height: 10rem;
-    width: 20rem;
-    border-radius: 0.3rem;
-    border: 0.1rem solid;
-    border-color: rgb(84, 84, 84);
-    
-}
-
-.CaixaMsg__input textarea {
-    width: 100%;
-    height: 100%;
-    padding: 0.1rem 0.7rem;
-    border: none;
-    resize: none;
-    
-}
-
-.Form__Contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;        
-}
-
-.Form__Contato h1 {
-    color: var(--main-tx-color);
-    font-weight: 700;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-}
-
-.Form__Contato p {
-    color: var(--side-tx-color);
-    font-weight: 400;
-    font-size: 1rem;
-    padding-left: 2rem;
-}
-
-.Bnt__Msg {
-    background-color: var(--side-bg-color);
-    color: var(--main-bg-color);
-    border-style: none;
-    font-size: 1.5rem;
-    border-radius: 0.3rem;
-    margin-top: 1.5rem;
-    height: 3rem;
-    font-size: 1rem;
-    padding: 0rem;
-    height: 3rem;
-    width: 75%;
-}
-
-@media screen and (max-width: 350px) {
-
-    .Conteiner__imgContato img {
-        height: 7rem;
-    }
-
-    .CaixaMsg__input {
-        height: 5rem;
-        width: 15rem;
-    }
-
-    .CaixaMsg__input textarea {
-        width: 100%;
-        font-size: 0.7rem;
-
-    }
-
-    .Form__Contato h1 {
-        font-size: 2rem;
-    }
-
-    .Form__Contato p {
-        font-size: 0.8rem;
-        padding-left: 2rem;
-        width: 90%;
-    }
-
-    .Bnt__Msg {
-        font-size: 1rem;
-        padding: 0rem;
-        height: 2rem;
-        width: 85%;
-    }
-}
-
-/* Responsividade Tablet 
-
-@media screen and (min-width: 700px) {
-    .Conteiner__imgContato img {
-        height: 20rem;
-        margin-bottom: 2rem;
-    }
-
-    .Form__Contato h1 {
-        font-size: 4rem;
-        padding-left: 3rem;
-    }
-
-    .Form__Contato p {
-        font-size: 1.5rem;
-        padding-left: 3rem;
-        width: 90%;
-    }
-
-    .CaixaMsg__input {
-        height: 15rem;
-        width: 40rem;
-        border-radius: 0.5rem;
-        border: 0.2rem solid;
-        border-color: rgb(84, 84, 84);
-    }
-
-    .CaixaMsg__input textarea {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-    .Bnt__Msg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        width: 79%;
-        height: 4rem;
-    }
-}
-
-/* Responsividade Notebook 
-
-@media screen and (min-width: 1200px) {
-    .Conteiner__Contato {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 10rem;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .Conteiner__CaixaTextoSide {
-        background-color: rgb(255, 255, 255);
-        width: 50;
-    }
-
-    .Conteiner__imgContato img {
-        height: 25rem;
-        margin-bottom: 0rem;
-    }
-
-    .CaixaMsg__input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 5rem;
-        width: 25rem;
-        border-radius: 0.5rem;
-        border: 0.1rem solid;
-        border-color: rgb(84, 84, 84);
-    }
-
-    .CaixaMsg__input textarea {
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        max-height: 100%;
-        min-height: 100%;
-    }
-
-    .Form__Contato h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0px;
-    }
-
-    .Form__Contato p {
-        font-size: 1rem;
-        padding-left: 3rem;
-        padding-bottom: 0rem;
-    }
-
-    .Bnt__Msg {
-        background-color: s;
-        margin-top: 1.5rem;
-        height: 3rem;
-        font-size: 1rem;
-        padding: 0rem;
-        width: 57%;
-
-    }
-}
-
-/* Responsividade Desktop 
-
-@media screen and (min-width: 1700px) {
-    .Conteiner__Contato {
-        height: 50rem;
-    }
-
-    .Conteiner__imgContato img {
-        height: 40rem;
-    }
-
-    .CaixaMsg__input textarea {
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        max-height: 100%;
-        min-height: 100%;
-
-    }
-
-    .Form__Contato h1 {
-        font-size: 3rem;
-    }
-
-    .Form__Contato p {
-        font-size: 1rem;
-        padding-left: 3rem;
-    }
-
-    .Bnt__Msg {
-        font-size: 1.5rem;
-        padding: 0rem 2rem;
-    }
-} */

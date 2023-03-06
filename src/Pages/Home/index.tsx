@@ -118,7 +118,7 @@ const Home = () => {
             placeholder="(00) 00000-0000"
             type="tel"
           /> */}
-          <a href="/contato">Se inscrever</a>
+          <a href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21"target="_blank">Entre em Contato</a>
         </form>
         <p id="text__Newsletter">
           Nós nunca enviaremos spam para você. Apenas informações úteis

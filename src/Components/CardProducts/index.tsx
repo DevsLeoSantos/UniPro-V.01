@@ -11,9 +11,7 @@ interface PropsCardProducts {
     line: string;
 }
 
-
 const CardProducts = (props: PropsCardProducts) => {
-
     return (
         <div className="ConteinerMain__CardProducts">
             <div className=" swing Conteiner__CardProducts">
@@ -22,7 +20,7 @@ const CardProducts = (props: PropsCardProducts) => {
                 </div>
                 <h1>{props.text}</h1>
                 <p>{props.line}</p>
-                <a href="/produtos">Visualizar</a>
+                <a href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21"target="_blank">Orçamento</a>
             </div>
         </div>
     )

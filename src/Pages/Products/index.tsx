@@ -40,11 +40,11 @@ const Products = () => {
   return (
     <div >
       {ProdutosUnipro.map((produto) => {
-        const { linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, fichaTécnica, fispq } = produto;
+        const { id, linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, fichaTécnica, fispq } = produto;
         return (
           <div>
             <Produtos
-              key={nome}
+              key={id}
               produtoLinha={linha}
               produtoBgImagem={imgbgproduto}
               produtoAplicacao={aplicacao}

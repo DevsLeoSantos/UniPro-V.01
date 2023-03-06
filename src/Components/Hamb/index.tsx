@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import "./Hamb.css";
 
 const Hamb = () => {
-  const [isOpenNav, setOpenNav] = useState("nav");
   const [isToggled, setToggled] = useState(false);
 
   return (
