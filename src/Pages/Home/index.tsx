@@ -110,16 +110,10 @@ const Home = () => {
         <h1>Receba Promoções</h1>
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 
-        <form onSubmit={aoSalvar} className="email__Newsletter">
-          {/* <input
-            required
-            onChange={aoDigitar}
-            value={news}
-            placeholder="(00) 00000-0000"
-            type="tel"
-          /> */}
-          <a href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21"target="_blank">Entre em Contato</a>
-        </form>
+        <div className="email__Newsletter">
+          <a href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">Contato</a>
+        </div>
+
         <p id="text__Newsletter">
           Nós nunca enviaremos spam para você. Apenas informações úteis
         </p>
