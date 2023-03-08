@@ -34,17 +34,11 @@ const Footer = () => {
                         <img src={Linkedin} alt="Logo Linkedin"></img>
                     </a>
                     <a
-                        href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">
+                        href="https://wa.link/wgrzyz" target="_blank">
                         <img src={Whatsapp} alt="Logo Whatsapp"></img>
                     </a>
                 </div>
 
-                <div className="Conteiner__menu_Footer">
-                    <a href="/">Home</a>
-                    <a href="/empresa">Empresa</a>
-                    <a href="/produtos">Produtos</a>
-                    <a href="/contato">Contato</a>
-                </div>
 
                 <div className="Conteiner__text_item_Footer">
                     <p>© 2023 All rights reserved Unipro</p>

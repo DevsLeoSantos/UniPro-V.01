@@ -58,10 +58,11 @@ const Company = () => {
             </p>
           </div>
           <div className="distribuição_bnt">
-            <a href="https://api.whatsapp.com/send/?phone=5514997982640&text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21&type=phone_number&app_absent=0">
-              Entrar em contato
+            <a download href="./imagens/Catalogo_2022_Unipro_.pdf">
+            Baixar Catálogo
             </a>
           </div>
+          
         </div>
         <div className="distribuição_itens">
           <div className="items">

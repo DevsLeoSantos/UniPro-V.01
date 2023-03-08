@@ -57,7 +57,7 @@ const Home = () => {
             fibras, acrílicos, alguns tipos de plásticos, dentre outras
             Embalagem: Cartucho 280gr.
           </p>
-          <a download href="/imagens/Catalogo_2022_Unipro_.pdf">
+          <a href="/produtos">
             Confira nossos Produtos
           </a>
         </div>

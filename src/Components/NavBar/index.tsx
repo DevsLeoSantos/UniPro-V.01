@@ -44,12 +44,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-
-        {/* <div className="Conteiner__Busca">
-          <input type="text" className="txt__Busca" placeholder="Buscar..." />
-          <i className='material-symbols-outlined'>search</i>
-        </div> */}
-
       </div>
       <Routes>
         <Route path='/' element={<Home/>}/>

@@ -61,16 +61,13 @@
     font-weight: 400;
     font-size: 1rem;
 }
-#Bnt__Msg{
-    color:#fff
-}
 
 .Bnt__Msg {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--side-bg-color);
-    
+    color: var(--main-bg-color);
     border-style: none;
     font-size: 1.5rem;
     border-radius: 0.3rem;
@@ -81,9 +78,16 @@
     width: 100%;
 }
 
-
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .container {
-    box-shadow: 8px 10px 5px #0003;
+    /* box-shadow: 8px 10px 5px #0003; */
     max-width: 500px;
     background-color: white;
     border-radius: 5px;
@@ -204,15 +208,17 @@
         height: 4rem;
     }
 }
-.Bnt__Msg{
-    color: white;
-}
+
 
 .container.heading{
     text-align: center;
     font-size: 30px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.container .accordion-container{
+    padding: 0 20px;
 }
 
 .container .accordion-container .accordion{

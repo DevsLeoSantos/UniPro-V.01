@@ -38,7 +38,7 @@ const Produtos = (props: PropsProdutos) => {
                     <p className="Desk_Conteiner__right_color">Cores:</p>
 
                     <div className="Desk_Conteiner__right_budget">
-                        <Link className="Desk_right_budget" to="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">Orçamento</Link>
+                        <a className="Desk_right_budget" href="https://wa.link/wgrzyz" target="_blank">Orçamento</a>
                         <div className="Desk_Conteiner__right_side">
                             <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
                             <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
