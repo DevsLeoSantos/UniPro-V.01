@@ -111,7 +111,7 @@ const Home = () => {
         <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
 
         <div className="email__Newsletter">
-          <a href="https://wa.me/5514997982640?text=Ol%C3%A1%2C+Gostaria+de+solicitar+um+or%C3%A7amento%21" target="_blank">Contato</a>
+          <a href="https://wa.link/wgrzyz" target="_blank">Contato</a>
         </div>
 
         <p id="text__Newsletter">

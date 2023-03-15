@@ -69,7 +69,7 @@ return (
                 <i>⬇</i>
             </div>
             <p className="accordion-content">
-                Nossa entrega é terceirizada pela transportadora Rodonaves.
+                Nossa entrega é terceirizada por algumas transportadoras, depende da região de entrega.
             </p>
           </div>
 
