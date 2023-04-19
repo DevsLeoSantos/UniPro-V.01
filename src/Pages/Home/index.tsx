@@ -49,7 +49,7 @@ const Home = () => {
       <Carrocel />
       <section className="Conteiner__Products">
         <div className="Box__Text">
-          <h1> Confira nosso melhores Produtos</h1>
+          <h1> Confira nossos melhores Produtos</h1>
           <p>
             Selante de silicone Acético com fungicida de uso profissional,
             indicado para vedações de superfícies lisas e não ferrosas - vidros,
@@ -57,7 +57,7 @@ const Home = () => {
             fibras, acrílicos, alguns tipos de plásticos, dentre outras
             Embalagem: Cartucho 280gr.
           </p>
-          <a href="/produtos">
+          <a download href="./imagens/Catalogo_2022_Unipro_.pdf">
             Confira nossos Produtos
           </a>
         </div>

@@ -18,11 +18,10 @@ const ClientesUnipro = [
       descricao: "Selante e adesivo a base de polímeros híbridos desenvolvido para aplicações de fixações em sistemas de envidraçamento de ambientes.",
       disponivel: 'Tubos 400g / Sachê 820g',
       aplicacao: 'Colagens de perfis de alumínio em vidros,vedações perimetrais entre perfis de alumínio,vidro e alvenaria, juntas estruturais.',
-      imagemDoProduto: "/imagens/Produtos/MS_hibrido - UNIPRO.png",
+      imagemDoProduto: "/imagens/Produtos/Sache.png",
       imagemProductAlt: "UNIPRO MS hibrido",
       fichaTécnica:"/Arquivos/Ficha_Tecnica_MS_Hibrido.pdf",
       fispq:"/Arquivos/FISPQ_MS-Hibrido.pdf"
-      
     },
     {
       nome: 'Silicone Neutro',

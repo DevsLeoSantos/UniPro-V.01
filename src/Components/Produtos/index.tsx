@@ -35,7 +35,7 @@ const Produtos = (props: PropsProdutos) => {
                 <div className="Desk_Conteiner__right">
                     <h1>{props.produtoNome}</h1>
                     <p className="Desk_Conteiner__right_description">{props.produtoDescricao}</p>
-                    <p className="Desk_Conteiner__right_color">Cores:</p>
+                    <p className="Desk_Conteiner__right_color">Dados:</p>
 
                     <div className="Desk_Conteiner__right_budget">
                         <a className="Desk_right_budget" href="https://wa.link/wgrzyz" target="_blank">Orçamento</a>
@@ -51,7 +51,7 @@ const Produtos = (props: PropsProdutos) => {
 
             <div className="Produtos__main">
 
-                <div style={{ backgroundImage: `url(${props.produtoBgImagem})` }} className="Produtos__Mobile">
+                <div style={{ backgroundImage: `url('')` }} className="Produtos__Mobile">
                     <div >
                         <img src={props.produtoImagem} alt={props.productAlt}></img>
                     </div>
@@ -71,10 +71,10 @@ const Produtos = (props: PropsProdutos) => {
                     <p>{props.produtoAplicacao}</p>
                     <h2>Descrição</h2>
                     <p className="Produtos__right_description">{props.produtoDescricao}</p>
-                    <h2 className="Produtos__right_color">Mais:</h2>
+                    <h2 className="Produtos__right_color">Dados:</h2>
                     <div className='ConteinerBotao botaoside'>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Ficha Técnica</a>
-                        <a href="/imagens/Catalogo_2022_Unipro_.pdf" download>Fispq</a>
+                        <a className="Desk_right_budget Desk_side" href={props.FichaTec} download>Ficha Técnica</a>
+                        <a className="Desk_right_budget Desk_side" href={props.Fispq} download>Fispq</a>
                     </div>
                 </div>
                 <div className="Produtos__Logo">
