@@ -1,7 +1,7 @@
 const ProdutosUnipro = [
   {
     id: 1,
-    nome: 'PU40',
+    nome: 'PU 40',
     linha: 'LINHA CONSTRUÇÃO',
     imgbgproduto: "/imagens/BgProdutos/bg_pu40.svg",
     descricao: "Selante para uso profissional, adere em diferentes superfícies - vidro, concreto, madeira, metal, fibra, cerâmica, borracha etc. Cura em contato com a umidade ambiente formando uma borracha resistente e flexível. Pode ser pintado, lavado e não forma fungos.",
@@ -40,7 +40,7 @@ const ProdutosUnipro = [
     fispq: "/Arquivos/FISPQ_Silicone_neutro.pdf"
   },
   {
-    id: 5,
+    id: 4,
     nome: 'Silicone Acético',
     linha: 'LINHA CONSTRUÇÃO',
     imgbgproduto: "/imagens/BgProdutos/bg_acetico.svg",
@@ -53,7 +53,7 @@ const ProdutosUnipro = [
     fispq: "/Arquivos/FISPQ_Silicone_acetico.pdf"
   },
   {
-    id: 6,
+    id: 5,
     nome: 'Fixa Espelho', linha: 'LINHA CONSTRUÇÃO',
     imgbgproduto: "/imagens/BgProdutos/bg_espelho.svg",
     descricao: "Adesivo a base de polímeros híbridos, de consistência pastosa, com propriedades de não escorrimento. Isento de solventes, não provoca manchas na superfície dos espelhos.",
@@ -65,7 +65,7 @@ const ProdutosUnipro = [
     fispq: "/Arquivos/FISPQ_Fixa_Espelho.pdf"
   },
   {
-    id: 7,
+    id: 6,
     nome: 'Fixa Tudo',
     linha: 'LINHA CONSTRUÇÃO',
     imgbgproduto: "/imagens/BgProdutos/bg_tudo.svg",
@@ -90,7 +90,19 @@ const ProdutosUnipro = [
     fichaTécnica: "/Arquivos/Ficha_Tecnica_Fixa_cuba.pdf",
     fispq: "/Arquivos/FISPQ_Fixa_Cuba.pdf"
   },
-
+  {
+    id: 8,
+    nome: 'Sache',
+    linha: 'LINHA CONSTRUÇÃO',
+    imgbgproduto: "/imagens/BgProdutos/bg_pu40.svg",
+    descricao: "Selante monocomponente à base de Polimero Hibrido de alta perfomace, especialmente desenvolvido para as diversas aplicações existentes na construção civil.",
+    disponivel: 'Tubos 400g / Sachê 820g',
+    aplicacao: 'Juntas de dilatação vertical e horizontal para estruturas ou paineis pré-fabricados em concreto com movimentação de até 12,5%.',
+    imagemDoProduto: "/imagens/Produtos/Sache.png",
+    imagemProductAlt: "UNIPRO Cuba Espelho",
+    fichaTécnica: "/Arquivos/Ficha_Tecnica_Sache.pdf",
+    fispq: "/Arquivos/FISPQ_PU-40.pdf"
+  },
 ]
 
 
