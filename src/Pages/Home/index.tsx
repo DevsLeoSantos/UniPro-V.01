@@ -21,10 +21,13 @@ import "./Newsletter.css";
 import "./ConteinerProducts.css";
 import { IProdutos } from "../Products";
 import { api } from "../../api/api";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [news, setNews] = useState("");
   const [produtos, setProdutos] = useState<IProdutos[]>([]);
+
+  const { t } = useTranslation("common");
 
   const aoDigitar = (e: any) => {
     setNews(e.target.value);
@@ -49,21 +52,19 @@ const Home = () => {
       <Carrocel />
       <section className="Conteiner__Products">
         <div className="Box__Text">
-          <h1> Confira nosso melhores Produtos</h1>
-          <p>
-            Selante de silicone Acético com fungicida de uso profissional,
-            indicado para vedações de superfícies lisas e não ferrosas - vidros,
-            alumínio, azulejos, peças sanitárias, cerâmicas vitrificadas,
-            fibras, acrílicos, alguns tipos de plásticos, dentre outras
-            Embalagem: Cartucho 280gr.
-          </p>
-          <a href="/produtos">
-            Confira nossos Produtos
-          </a>
+          <h1> {t("home.melhores.produtos.titulo")}</h1>
+          <p>{t("home.melhores.produtos.descricao")}</p>
+          <a href="/produtos">{t("home.melhores.produtos.botao")}</a>
         </div>
-        <div className='Box__Products'>
+        <div className="Box__Products">
           {ProdutosUnipro.map((produto) => {
-            const { linha, imgbgproduto, imagemDoProduto, nome, imagemProductAlt } = produto;
+            const {
+              linha,
+              imgbgproduto,
+              imagemDoProduto,
+              nome,
+              imagemProductAlt,
+            } = produto;
 
             return (
               <CardProducts
@@ -73,50 +74,50 @@ const Home = () => {
                 text={nome}
                 line={linha}
               />
-            )
+            );
           })}
         </div>
       </section>
 
       <BannerCentral
-        text="Nossa essência é a parceria sólida com nossos clientes e fornecedores"
+        text={t("home.banner.descricao")}
         img={"/imagens/BgBanner/BgImg1.svg"}
       />
 
       <section data-aos="fade-right" className="conteiner__Beneficios">
-        <h1>Benefícios</h1>
+        <h1>{t("home.beneficios.titulo")}</h1>
         <div className="logos__Beneficios">
           <div>
             <img src={LogoPagamento} alt="Logo Pagamento" />
-            <h3>Forma de pagamento</h3>
-            <p>Oferecemos pagamento flexível opções, para facilitar.</p>
+            <h3>{t("home.beneficios.formapagamento.titulo")}</h3>
+            <p>{t("home.beneficios.formapagamento.descricao")}</p>
           </div>
 
           <div>
             <img src={LogoDevolução} alt="Logo Devolução" />
-            <h3>Política de devolução</h3>
-            <p>Você pode devolver um produto dentro de 07 dias.</p>
+            <h3>{t("home.beneficios.politica.titulo")}</h3>
+            <p>{t("home.beneficios.politica.descricao")}</p>
           </div>
 
           <div>
             <img src={LogoAtendimento} alt="Logo Atendimento" />
-            <h3>Suporte ao cliente</h3>
-            <p>Nosso suporte ao cliente de Segunda a Sexta.</p>
+            <h3>{t("home.beneficios.suporte.titulo")}</h3>
+            <p>{t("home.beneficios.suporte.descricao")}</p>
           </div>
         </div>
       </section>
 
       <section data-aos="fade-top " className="conteiner__Newsletter">
-        <h1>Receba Promoções</h1>
-        <p>ASSINE NOSSO NEWSLETTER E RECEBA PROMOÇÕES!</p>
+        <h1>{t("home.newsletter.titulo")}</h1>
+        <p>{t("home.newsletter.descricao")}</p>
 
         <div className="email__Newsletter">
-          <a href="https://wa.link/wgrzyz" target="_blank">Contato</a>
+          <a href="https://wa.link/wgrzyz" target="_blank">
+            {t("home.newsletter.botao")}
+          </a>
         </div>
 
-        <p id="text__Newsletter">
-          Nós nunca enviaremos spam para você. Apenas informações úteis
-        </p>
+        <p id="text__Newsletter">{t("home.newsletter.aviso")}</p>
       </section>
     </div>
   );

@@ -38,9 +38,20 @@ const Products = () => {
   }, []);
 
   return (
-    <div >
+    <div>
       {ProdutosUnipro.map((produto) => {
-        const { id, linha, imgbgproduto, aplicacao, imagemDoProduto, imagemProductAlt, nome, descricao, fichaTécnica, fispq } = produto;
+        const {
+          id,
+          linha,
+          imgbgproduto,
+          aplicacao,
+          imagemDoProduto,
+          imagemProductAlt,
+          nome,
+          descricao,
+          fichaTécnica,
+          fispq,
+        } = produto;
         return (
           <div>
             <Produtos
@@ -56,10 +67,10 @@ const Products = () => {
               FichaTec={fichaTécnica}
             />
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

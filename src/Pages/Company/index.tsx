@@ -11,15 +11,17 @@ import "./Maps.css";
 import "./Solucoes.css";
 import "./Distribuição.css";
 import "aos/dist/aos.css";
-
+import { useTranslation } from "react-i18next";
+import ReactHtmlParser from "react-html-parser";
 const Company = () => {
+  const { t } = useTranslation("common");
   const map =
     "https://maps.google.com/maps?q=unipro selantes&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <div className="Conteiner__Company">
       <section data-aos="fade-in" className="Conteiner__Company_banner">
-        <h1>Quem Somos</h1>
+        <h1>{t("empresa.titulo")}</h1>
       </section>
 
       <section data-aos="fade-down" className="Conteiner__Solucoes">
@@ -32,68 +34,47 @@ const Company = () => {
           </div>
         </div>
         <div data-aos="fade-in" className="solucoes_text">
-          <h1>Pensando em melhores soluções para área da construção civil?</h1>
-          <p>
-            a UNIPRO Selantes foi fundada com o objetivo de não só apresentar,
-            mas também de disponibilizar essas soluções da melhor maneira
-            possível, de forma rápida, prática e segura.
-          </p>
+          <h1>{t("empresa.secao1.titulo")}</h1>
+          <p>{t("empresa.secao1.descricao")}</p>
         </div>
       </section>
 
       <section data-aos="fade-right" className="Conteiner__distribuição">
         <div className="distribuição_left">
           <div className="distribuição_decada">
-            <h1>&#10027; Mais de uma Década</h1>
+            <h1>&#10027; {t("empresa.secao2.titulo")}</h1>
           </div>
           <div className="distribuição_text">
-            <h1>
-              Atuando na área de Distribuição e representação de selantes e
-              fixadores a quase uma década.
-            </h1>
-            <p>
-              UNIPRO vem se solidificando cada vez mais e aumentando sua área de
-              atuação, trazendo também outros materiais do setor de Construção
-              Civil.
-            </p>
+            <h1>{t("empresa.secao2.subtitulo")}</h1>
+            <p>{t("empresa.secao2.descricao")}</p>
           </div>
           <div className="distribuição_bnt">
             <a download href="./imagens/Catalogo_2022_Unipro_.pdf">
-            Baixar Catálogo
+              {t("empresa.baixar.catalogo")}
             </a>
           </div>
-          
         </div>
         <div className="distribuição_itens">
           <div className="items">
             <img src="/imagens/Logos/Imperbealizante.svg" alt="Pu" />
             <div className="item">
-              <h3>Impermeabilizantes</h3>
-              <p>
-                Selante para uso profissional, adere em diferentes superfícies,
-                resistente a agua e etc.
-              </p>
+              <h3>{t("empresa.secao2.produto1.titulo")}</h3>
+              <p>{t("empresa.secao2.produto1.descricao")}</p>
             </div>
           </div>
 
           <div className="items">
             <img src="/imagens/Logos/Parafusos.svg" alt="Pu" />
             <div className="item">
-              <h3>Parafusos e Rebites</h3>
-              <p>
-                Brocantes de diversas medidas, fixação de estrutura metálica,
-                madeira, alumínio e etc.{" "}
-              </p>
+              <h3> {t("empresa.secao2.produto2.titulo")}</h3>
+              <p>{t("empresa.secao2.produto2.descricao")}</p>
             </div>
           </div>
           <div className="items">
             <img src="/imagens/Logos/Construcao.svg" alt="Pu" />
             <div className="item">
-              <h3>Construção</h3>
-              <p>
-                Diversos outros produtos voltados para o setor da construção
-                civil e industrial.
-              </p>
+              <h3> {t("empresa.secao2.produto3.titulo")}</h3>
+              <p>{t("empresa.secao2.produto3.descricao")}</p>
             </div>
           </div>
         </div>
@@ -105,18 +86,11 @@ const Company = () => {
           alt="Seu produto"
         ></img>
       </section>
-      
+
       <section data-aos="fade-left" className="Conteiner__Video">
         <div className="Text_Video">
-          <h1>
-            Produtos<span>UniPro</span>
-          </h1>
-          <h2>
-            Agora, também atuando no setor <span>INDUSTRIAL</span>, fabricamos
-            nossa própria linha de <span>selantes</span>,{" "}
-            <span>fixadores e silicones</span>, trazendo cada vez mais
-            qualidade, valor e segurança para nossos clientes e parceiros.
-          </h2>
+          <h1>{ReactHtmlParser(t("empresa.secao3.titulo"))}</h1>
+          <h2>{ReactHtmlParser(t("empresa.secao3.descricao"))}</h2>
         </div>
         <div className="Video_main">
           <img src="/imagens/ProdutosVideo.gif" alt="Produção de Pu" />
@@ -124,24 +98,18 @@ const Company = () => {
       </section>
 
       <BannerCentral
-        text="Conheça a UNIPRO, a indústria mais completa do interior paulista, com compromisso total pelo cliente!"
+        text={t("empresa.secao4.descricao")}
         img={"/imagens/BgBanner/BgImg2.svg"}
       />
 
-  
       <section data-aos="zoom-in" className="Conteiner__maps">
         <div className="maps">
           <iframe src={map} className="Map" aria-hidden="false"></iframe>
         </div>
         <div className="Conteiner__localização">
-          <h1>Localização</h1>
+          <h1>{t("empresa.localizacao.titulo")}</h1>
           <div className="localização_descrição">
-            <p>
-              Localizada em Marília, interior do estado de São Paulo, entregamos
-              em todo o Brasil, e temos por compromisso não só criar, mas também
-              de manter uma parceria sólida e duradoura com nossos parceiros e
-              clientes, com as melhores condições de venda e entrega do mercado.
-            </p>
+            <p>{t("empresa.localizacao.descricao")}</p>
           </div>
           <div className="localização">
             <img
@@ -158,7 +126,7 @@ const Company = () => {
             target="_blank"
             href="https://www.google.com/maps/dir//unipro/@-22.2033473,-49.9656632,17.88z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94bfd129061e84ef:0x21ded18010838e55!2m2!1d-49.9645501!2d-22.203319"
           >
-            Iniciar Rota
+            {t("empresa.localizacao.botao")}
           </a>
         </div>
       </section>
