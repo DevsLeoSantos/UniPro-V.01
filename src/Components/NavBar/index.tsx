@@ -16,12 +16,7 @@ import "./NavBar.css";
 import { useRef } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-
-enum languages {
-  pt_br = "pt_br",
-  en = "en",
-  es = "es",
-}
+import { languages } from "../../enums/languages";
 
 const NavBar = () => {
   var selectRef = useRef<HTMLSelectElement>(null);

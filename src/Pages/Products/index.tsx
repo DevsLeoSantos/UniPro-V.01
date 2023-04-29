@@ -31,19 +31,6 @@ export type IProdutos = {
 };
 
 const Products = () => {
-  const [produtos, setProdutos] = useState<IProdutos[]>([]);
-
-  async function getProdutos() {
-    var produtos = await api.get("/produto");
-    return produtos.data as IProdutos[];
-  }
-
-  useEffect(() => {
-    getProdutos().then((data) => {
-      setProdutos(data);
-    });
-  }, []);
-
   return (
     <div>
       {ProdutosUnipro.map((produto) => {
@@ -58,31 +45,31 @@ const Products = () => {
           descricao,
           fichaTécnica,
           fispq,
+          translateKey,
+          especificacoes,
         } = produto;
         return (
           <div>
             <Produtos
               key={id}
-              produtoLinha={linha}
+              especificacoes={especificacoes}
               produtoBgImagem={imgbgproduto}
-              produtoAplicacao={aplicacao}
               produtoImagem={imagemDoProduto}
               productAlt={imagemProductAlt}
-              produtoNome={nome}
-              produtoDescricao={descricao}
               Fispq={fispq}
               FichaTec={fichaTécnica}
+              translateKey={translateKey}
             />
           </div>
         );
       })}
-      <Produtosv7 />
+      {/* <Produtosv7 />
       <Produtosv8 />
       <Produtosv5 />
       <Produtosv2 />
       <Produtosv4 />
       <Produtosv3 />
-      <Produtosv6 />
+      <Produtosv6 /> */}
     </div>
   );
 };

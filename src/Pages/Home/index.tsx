@@ -22,6 +22,8 @@ import "./ConteinerProducts.css";
 import { IProdutos } from "../Products";
 import { api } from "../../api/api";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { languages } from "../../enums/languages";
 
 const Home = () => {
   const [news, setNews] = useState("");
@@ -42,30 +44,18 @@ const Home = () => {
   }
 
   useEffect(() => {
-    getProdutos().then((data) => {
-      setProdutos(data);
-    });
-  }, []);
+    console.log("teste", i18next.language);
+  }, [i18next.language]);
 
   return (
     <div className="Conteiner__Home">
       <Carrocel />
+
       <section className="Conteiner__Products">
         <div className="Box__Text">
           <h1> {t("home.melhores.produtos.titulo")}</h1>
           <p>{t("home.melhores.produtos.descricao")}</p>
           <a href="/produtos">{t("home.melhores.produtos.botao")}</a>
-          <h1> Confira nossos melhores Produtos</h1>
-          <p>
-            Selante de silicone Acético com fungicida de uso profissional,
-            indicado para vedações de superfícies lisas e não ferrosas - vidros,
-            alumínio, azulejos, peças sanitárias, cerâmicas vitrificadas,
-            fibras, acrílicos, alguns tipos de plásticos, dentre outras
-            Embalagem: Cartucho 280gr.
-          </p>
-          <a download href="./imagens/Catalogo_2022_Unipro_.pdf">
-            Confira nossos Produtos
-          </a>
         </div>
         <div className="Box__Products">
           {ProdutosUnipro.map((produto) => {
