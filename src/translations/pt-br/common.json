@@ -105,5 +105,17 @@
   "produtos.broc-reb.nome": "BROCA E REBITE",
   "produtos.broc-reb.linha": "BROCA E REBITE",
   "produtos.broc-reb.descricao": "Utilizados na fixação de estruturas metélicas, unão de chapas e perfis, fixação de madeira com aço, aluminio etc.",
-  "produtos.broc-reb.aplicacao": "Brocas, rebites e ponteiras. Diversas medidas, confira nossas Especificações ou entre em contato conosco."
+  "produtos.broc-reb.aplicacao": "Brocas, rebites e ponteiras. Diversas medidas, confira nossas Especificações ou entre em contato conosco.",
+  "main.contato.titulo": "Duvidas Frequentes !",
+  "main.contato.valor.frete.titulo": "Qual o valor de frete ?",
+  "main.contato.valor.frete.resposta": "Varia por região de entrega, ao realizar o orçamento o frete é negociado de acordo com o valor do pedido.",
+  "main.contato.forma.pagamento.titulo": "Quais as formas e prazos de pagamentos?",
+  "main.contato.forma.pagamento.resposta": "Temos 3 formas de pagamento, no pix a vista antecipado, cartão de crédito geramos um link para que você efetuar o pagamento e no boleto dependendo do valor em até 4x.",
+  "main.contato.entrega.titulo": "Como funciona a entrega?",
+  "main.contato.entrega.resposta": "Nossa entrega é terceirizada por algumas transportadoras, depende da região de entrega.",
+  "main.contato.localizacao.titulo": "Qual a localização da empresa?",
+  "main.contato.localizacao.resposta": "Somos de Marília, interior de São Paulo, mas entregamos para todo Brasil.",
+  "main.contato.tempo.entrega.titulo": "Qual o tempo de entregar?",
+  "main.contato.tempo.entrega.resposta": "Varia da localização do cliente. Norte e Nordeste 15 dias úteis.",
+  "main.contato.botao.entrar.contato": "Entrar em Contato"
 }

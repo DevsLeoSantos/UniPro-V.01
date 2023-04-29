@@ -105,5 +105,17 @@
   "produtos.broc-reb.nome": "BROCAS Y REMACHES",
   "produtos.broc-reb.linha": "BROCAS Y REMACHES",
   "produtos.broc-reb.descricao": "Se utiliza para la fijación de estructuras metálicas, unión de chapas y perfiles, fijación de madera a acero, aluminio, etc.",
-  "produtos.broc-reb.aplicacao": "Taladros, remaches y puntas. Varios tamaños, consulte nuestras Especificaciones o contáctenos."
+  "produtos.broc-reb.aplicacao": "Taladros, remaches y puntas. Varios tamaños, consulte nuestras Especificaciones o contáctenos.",
+  "main.contato.titulo": "¡Preguntas frecuentes!",
+  "main.contato.valor.frete.titulo": "¿Cuál es el costo de envío?",
+  "main.contato.valor.frete.resposta": "Varía según la región de entrega, al hacer el presupuesto se negocia el flete de acuerdo al valor del pedido.",
+  "main.contato.forma.pagamento.titulo": "¿Cuáles son las formas de pago y los plazos?",
+  "main.contato.forma.pagamento.resposta": "Tenemos 3 formas de pago, en el pix por adelantado, tarjeta de crédito te generamos un link para que realices el pago y en el boleto dependiendo del monto hasta 4x.",
+  "main.contato.entrega.titulo": "¿Cómo funciona la entrega?",
+  "main.contato.entrega.resposta": "Nuestra entrega es subcontratada por algunos transportistas, dependiendo de la región de entrega.",
+  "main.contato.localizacao.titulo": "¿Cuál es la ubicación de la empresa?",
+  "main.contato.localizacao.resposta": "Somos de Marília, en el interior de São Paulo, pero hacemos entregas en todo Brasil.",
+  "main.contato.tempo.entrega.titulo": "¿Cuál es el tiempo de entrega?",
+  "main.contato.tempo.entrega.resposta": "Varía según la ubicación del cliente. Norte y Noreste 15 días hábiles.",
+  "main.contato.botao.entrar.contato": "Ponerse en contacto"
 }

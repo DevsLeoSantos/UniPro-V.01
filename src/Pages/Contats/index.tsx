@@ -14,8 +14,11 @@ import {
 } from "reactstrap";
 
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contats = () => {
+  const { t } = useTranslation("common");
+
   function ToggleAccordion(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     var target = e.currentTarget;
     if (target.classList.contains("active")) {
@@ -51,65 +54,60 @@ const Contats = () => {
         <img src={ImgContato} alt="Imagem de Contato" />
       </div>
       <div className="container">
-        <h1 className="heading">Duvidas Frequentes !</h1>
+        <h1 className="heading">{t("main.contato.titulo")}</h1>
         <div className="accordion-container">
           <div className="accordion" onClick={(e) => ToggleAccordion(e)}>
             <div className="accordion-heading">
-              <h3>Qual o valor de frete ?</h3>
+              <h3>{t("main.contato.valor.frete.titulo")}</h3>
               <i>⬇</i>
             </div>
             <p className="accordion-content">
-              Varia por região de entrega, ao realizar o orçamento o frete é
-              negociado de acordo com o valor do pedido.
+              {t("main.contato.valor.frete.resposta")}
             </p>
           </div>
 
           <div className="accordion" onClick={(e) => ToggleAccordion(e)}>
             <div className="accordion-heading">
-              <h3>Quais as formas e prazos de pagamentos?</h3>
+              <h3>{t("main.contato.forma.pagamento.titulo")}</h3>
               <i>⬇</i>
             </div>
             <p className="accordion-content">
-              Temos 3 formas de pagamento, no pix a vista antecipado, cartão de
-              crédito geramos um link para que você efetuar o pagamento e no
-              boleto dependendo do valor em até 4x.
+              {t("main.contato.forma.pagamento.resposta")}
             </p>
           </div>
 
           <div className="accordion" onClick={(e) => ToggleAccordion(e)}>
             <div className="accordion-heading">
-              <h3>Como funciona a entrega?</h3>
+              <h3>{t("main.contato.entrega.titulo")}</h3>
               <i>⬇</i>
             </div>
             <p className="accordion-content">
-              Nossa entrega é terceirizada por algumas transportadoras, depende
-              da região de entrega.
+              {t("main.contato.entrega.resposta")}
             </p>
           </div>
 
           <div className="accordion" onClick={(e) => ToggleAccordion(e)}>
             <div className="accordion-heading">
-              <h3>Qual a localização da empresa?</h3>
+              <h3>{t("main.contato.localizacao.titulo")}</h3>
               <i>⬇</i>
             </div>
             <p className="accordion-content">
-              Somos de Marília, interior de São Paulo, mas entregamos para todo
-              Brasil.
+              {t("main.contato.localizacao.resposta")}
             </p>
           </div>
 
           <div className="accordion" onClick={(e) => ToggleAccordion(e)}>
             <div className="accordion-heading">
-              <h3>Qual o tempo de entregar?</h3>
+              <h3>{t("main.contato.tempo.entrega.titulo")}</h3>
               <i>⬇</i>
             </div>
             <p className="accordion-content">
-              Varia da localização do cliente. Norte e Nordeste 15 dias úteis.
+              {t("main.contato.tempo.entrega.resposta")}
             </p>
           </div>
         </div>
         <a className="Bnt__Msg" href="https://wa.link/wgrzyz" target="_blank">
-          Entrar em Contato
+          {t("main.contato.botao.entrar.contato")}
         </a>
       </div>
     </div>

@@ -5,6 +5,10 @@ import Hamb from "../Hamb";
 //Imagens
 import Logo from "/imagens/Logos/LogoUnipro.svg";
 
+import Es from "/imagens/Navbar/Traducao/ESPANHOL.svg";
+import En from "/imagens/Navbar/Traducao/INGLES.svg";
+import PtBr from "/imagens/Navbar/Traducao/PORTUGUES.svg";
+
 //Pages
 import Home from "../../Pages/Home";
 import Company from "../../Pages/Company";
@@ -22,9 +26,8 @@ const NavBar = () => {
   var selectRef = useRef<HTMLSelectElement>(null);
   const { t } = useTranslation("common");
 
-  async function changeLanguage() {
-    console.log(selectRef.current?.value);
-    await i18next.changeLanguage(selectRef.current?.value);
+  async function changeLanguage(language: languages) {
+    await i18next.changeLanguage(language);
   }
 
   return (
@@ -61,11 +64,46 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="languages-box">
-          <select name="" id="" ref={selectRef} onChange={changeLanguage}>
-            <option value={languages.pt_br}>PTBR</option>
+          <button
+            onClick={() => changeLanguage(languages.pt_br)}
+            style={{
+              border: 0,
+              outline: 0,
+              background: "transparent",
+              cursor: "pointer",
+            }}
+          >
+            <img src={PtBr} />
+          </button>
+          <button
+            onClick={() => changeLanguage(languages.en)}
+            style={{
+              border: 0,
+              outline: 0,
+              background: "transparent",
+              cursor: "pointer",
+            }}
+          >
+            <img src={En} />
+          </button>
+          <button
+            onClick={() => changeLanguage(languages.es)}
+            style={{
+              border: 0,
+              outline: 0,
+              background: "transparent",
+              cursor: "pointer",
+            }}
+          >
+            <img src={Es} />
+          </button>
+          {/* <select name="" id="" ref={selectRef} onChange={changeLanguage}>
+            <option value={languages.pt_br}>
+              <PtBr />
+            </option>
             <option value={languages.en}>INGLES</option>
             <option value={languages.es}>ESPANHOL</option>
-          </select>
+          </select> */}
         </div>
       </div>
       <Routes>
