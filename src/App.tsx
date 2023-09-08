@@ -11,6 +11,8 @@ import { ToastContainer } from "react-toastify";
 //Estilos
 import "./App.css";
 import "react-toastify/dist/ReactToastify.min.css"
+import { useEffect } from "react";
+import i18next from "i18next";
 
 
 
@@ -21,7 +23,6 @@ function App() {
     <div className="App">
       <NavBar />
       <Footer />
-      <BntWhats />
       <ToastContainer />
     </div>
   );

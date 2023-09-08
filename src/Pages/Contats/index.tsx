@@ -15,10 +15,20 @@ import {
 
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import RetornarLink from "../../utils/RetornaLinkWhatsapp";
 
 const Contats = () => {
   const { t } = useTranslation("common");
 
+
+  const [language , setLanguage] = useState(i18next.language);
+
+
+   useEffect(() => {
+      setLanguage(i18next.language)
+   } ,[i18next.language])
+   
   function ToggleAccordion(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     var target = e.currentTarget;
     if (target.classList.contains("active")) {
@@ -28,25 +38,6 @@ const Contats = () => {
     }
   }
 
-  // useEffect(() => {
-  //   console.log("foidase");
-  //   let accordions = document.querySelectorAll(
-  //     ".accordion-container .accordion"
-  //   );
-  //   console.log(accordions);
-  //   accordions.forEach((acco) => {
-  //     acco.addEventListener("click", () => {
-  //       if (acco?.classList.contains("active")) {
-  //         acco?.classList.remove("active");
-  //       } else {
-  //         acco?.classList.add("active");
-  //       }
-
-  //       // accordions.forEach(subAcco => { subAcco.classList.remove('active') });
-  //       //acco.classList.add('active');
-  //     });
-  //   });
-  // }, []);
 
   return (
     <div className="Conteiner__Contato">
@@ -106,7 +97,7 @@ const Contats = () => {
             </p>
           </div>
         </div>
-        <a className="Bnt__Msg" href="https://wa.link/wgrzyz" target="_blank">
+        <a className="Bnt__Msg" href={RetornarLink(language)} target="_blank">
           {t("main.contato.botao.entrar.contato")}
         </a>
       </div>

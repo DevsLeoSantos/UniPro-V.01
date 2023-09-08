@@ -5,15 +5,15 @@ import React from "react";
 import "./Carrocel.css";
 
 //Imagens
-import imagem1 from "/imagens/ImagensCarrocel/Carrocel1.svg";
-import imagem2 from "/imagens/ImagensCarrocel/Carrocel2.svg";
+import imagem1 from "/imagens/ImagensCarrocel/Carrocel1.png";
+import imagem2 from "/imagens/ImagensCarrocel/Carrocel2.png";
 import imagem3 from "/imagens/ImagensCarrocel/Carrocel3.svg";
-import imagem4 from "/imagens/ImagensCarrocel/Carrocel4.svg";
-import ingles1 from "/imagens/ImagensCarrocel/Ingles1.svg";
-import ingles2 from "/imagens/ImagensCarrocel/Ingles2.svg";
+import imagem4 from "/imagens/ImagensCarrocel/Carrocel4.png";
+import ingles1 from "/imagens/ImagensCarrocel/Ingles1.png";
+import ingles2 from "/imagens/ImagensCarrocel/Ingles2.png";
 import ingles3 from "/imagens/ImagensCarrocel/Ingles3.svg";
-import espanhol1 from "/imagens/ImagensCarrocel/Espanhol1.svg";
-import espanhol2 from "/imagens/ImagensCarrocel/Espanhol2.svg";
+import espanhol1 from "/imagens/ImagensCarrocel/Espanhol1.png";
+import espanhol2 from "/imagens/ImagensCarrocel/Espanhol2.png";
 import espanhol3 from "/imagens/ImagensCarrocel/Espanhol3.svg";
 import i18next from "i18next";
 

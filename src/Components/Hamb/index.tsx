@@ -12,7 +12,7 @@ const Hamb = () => {
   return (
     <div className="Conteiner__Hamb">
       <Hamburger
-        color={isToggled ? "#fff" : "#000"}
+        color={isToggled ? "#000" : "#000"}
         onToggle={(toggled) => {
           setToggled(toggled);
         }}

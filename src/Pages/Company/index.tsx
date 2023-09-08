@@ -13,6 +13,24 @@ import "./Distribuição.css";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import ReactHtmlParser from "react-html-parser";
+import imagem1 from "/imagens/ImagensCarrocel/Carrocel1.svg";
+import imagem2 from "/imagens/ImagensCarrocel/Carrocel2.svg";
+import imagem3 from "/imagens/ImagensCarrocel/Carrocel3.svg";
+import imagem4 from "/imagens/ImagensCarrocel/Carrocel4.svg";
+import ingles1 from "/imagens/ImagensCarrocel/Ingles1.png";
+import ingles2 from "/imagens/ImagensCarrocel/Ingles2.png";
+import espanhol1 from "/imagens/ImagensCarrocel/Espanhol1.svg";
+import espanhol2 from "/imagens/ImagensCarrocel/Espanhol2.svg";
+import espanhol3 from "/imagens/ImagensCarrocel/Espanhol3.svg";
+import i18next from "i18next";
+
+const images: { [index: string]: { [index2: string]: any } } = {
+  imagem3: {
+    pt_br: imagem3,
+    en: ingles2,
+    es: espanhol3,
+  },
+};
 const Company = () => {
   const { t } = useTranslation("common");
   const map =
@@ -82,7 +100,7 @@ const Company = () => {
 
       <section data-aos="fade-left" className="Conteriner_SeuProduto">
         <img
-          src="/imagens/ImagensCarrocel/Carrocel3.svg"
+          src={images.imagem3[i18next.language]}
           alt="Seu produto"
         ></img>
       </section>

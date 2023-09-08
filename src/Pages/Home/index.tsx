@@ -12,7 +12,7 @@ import LogoDevolução from "/imagens/Logos/IconDevolução.svg";
 import LogoAtendimento from "/imagens/Logos/IconAtendimento.svg";
 
 //Dados
-import ProdutosUnipro from "../../data/ProdutosDados";
+import ProdutosUnipro from "../../data/ProdutosDados2";
 
 //Estilos
 import "./Home.css";
@@ -44,6 +44,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    debugger;
     console.log("teste", i18next.language);
   }, [i18next.language]);
 
@@ -55,7 +56,7 @@ const Home = () => {
         <div className="Box__Text">
           <h1> {t("home.melhores.produtos.titulo")}</h1>
           <p>{t("home.melhores.produtos.descricao")}</p>
-          <a href="/produtos">{t("home.melhores.produtos.botao")}</a>
+          <a download href="./imagens/Catalogo_2022_Unipro_.pdf">{t("home.melhores.produtos.botao")}</a>
         </div>
         <div className="Box__Products">
           {ProdutosUnipro.map((produto) => {
@@ -64,16 +65,18 @@ const Home = () => {
               imgbgproduto,
               imagemDoProduto,
               nome,
-              imagemProductAlt,
+              translateKey
             } = produto;
 
             return (
               <CardProducts
+                translateKey={translateKey}
                 key={nome}
                 img={imagemDoProduto}
                 imgBg={imgbgproduto}
-                text={nome}
-                line={linha}
+                text={nome!}
+                line={linha!}
+                
               />
             );
           })}

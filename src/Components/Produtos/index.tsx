@@ -2,6 +2,9 @@
 import { Link } from "react-router-dom";
 import "./Produtos.css";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { useEffect, useState } from "react";
+import RetornarLink from "../../utils/RetornaLinkWhatsapp";
 
 interface PropsProdutos {
   produtoBgImagem: any;
@@ -15,6 +18,10 @@ interface PropsProdutos {
 
 const Produtos = (props: PropsProdutos) => {
   const { t } = useTranslation("common");
+  const [language , setLanguage] = useState(i18next.language);
+   useEffect(() => {
+      setLanguage(i18next.language)
+   } ,[i18next.language])
   return (
     <>
       <div data-aos="zoom-in-down" className="Desk_Conteiner__main">
@@ -49,7 +56,7 @@ const Produtos = (props: PropsProdutos) => {
           <div className="Desk_Conteiner__right_budget">
             <a
               className="Desk_right_budget"
-              href="https://wa.link/wgrzyz"
+              href={RetornarLink(language)}
               target="_blank"
             >
               {t("produtos.orcamento.botao")}

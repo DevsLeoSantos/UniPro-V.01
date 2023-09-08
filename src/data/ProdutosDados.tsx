@@ -9,7 +9,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.",
-    imagemDoProduto: "/imagens/Produtos/PU40 - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/PU40 - UNI.png",
     imagemProductAlt: "UNIPRO PU40",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_PU40.pdf",
     fispq: "/Arquivos/FISPQ_PU-40.pdf",
@@ -18,6 +18,23 @@ const ProdutosUnipro = [
   },
   {
     id: 2,
+    nome: "PU CONSTRUÇÃO",
+    linha: "LINHA CONSTRUÇÃO",
+    imgbgproduto: "/imagens/BgProdutos/bg_construcao.svg",
+    descricao:
+      "É um selante elástico de poliuretano modificado, utilizado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.",
+    disponivel: "Tubos 400g / Sachê 820g",
+    aplicacao:
+      "Adere em diferentes superfícies como vidro, concreto, madeira, metal, fibra, cerâmica, alguns tipos de plásticos e borrachas etc.",
+    imagemDoProduto: "/imagens/Produtos/PUCONSTRUCAO.png",
+    imagemProductAlt: "UNIPRO PU40",
+    fichaTécnica: "/Arquivos/Ficha_Técnica _PU_Construção.pdf",
+    fispq: "/Arquivos/Fispq_PU_Construção.pdf",
+    translateKey: "pu-const",
+    especificacoes: "",
+  },
+  {
+    id: 3,
     nome: "MS Híbrido",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_hibrido.svg",
@@ -26,7 +43,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Colagens de perfis de alumínio em vidros,vedações perimetrais entre perfis de alumínio,vidro e alvenaria, juntas estruturais.",
-    imagemDoProduto: "/imagens/Produtos/MS_hibrido - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/MS_hibrido - UNI.png",
     imagemProductAlt: "UNIPRO MS hibrido",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_MS_Hibrido.pdf",
     fispq: "/Arquivos/FISPQ_MS-Hibrido.pdf",
@@ -34,7 +51,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 3,
+    id: 4,
     nome: "Silicone Neutro",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_neutro.svg",
@@ -43,7 +60,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Vedações e preenchimento de juntas de acabamentos. Adere em diversas superfícies, vidro, concreto, policarbonato, fibra de vidro e alguns tipos de plásticos.",
-    imagemDoProduto: "/imagens/Produtos/Silicone_Neutro - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/Silicone_Neutro - UNI.png",
     imagemProductAlt: "UNIPRO Silicone Neutro",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_Silicone_neutro.pdf",
     fispq: "/Arquivos/FISPQ_Silicone_neutro.pdf",
@@ -51,24 +68,58 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 4,
+    id: 18,
     nome: "Silicone Acético",
     linha: "LINHA CONSTRUÇÃO",
-    imgbgproduto: "/imagens/BgProdutos/bg_acetico.svg",
+    imgbgproduto: "/imagens/BgProdutos/bg_acetico2.svg",
     descricao:
       "Selante de silicone de cura acética com fungicida para uso profissional. Cura em contato com a umidade atmosférica, transformando-se em uma borracha flexível e impermeável. Não forma fungos.",
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.",
-    imagemDoProduto: "/imagens/Produtos/Silicone_Acetico - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/SILICONE_ACETICO.png",
     imagemProductAlt: "UNIPRO Silicone Acetico",
-    fichaTécnica: "/Arquivos/Ficha_Tecnica_Silicone_acetico.pdf",
+    fichaTécnica: "/Arquivos/Ficha_Tecnica_Silicone_acetico.pd",
     fispq: "/Arquivos/FISPQ_Silicone_acetico.pdf",
-    translateKey: "sili-ace",
+    translateKey: "sili-ace-15",
     especificacoes: "",
   },
   {
     id: 5,
+    nome: "Silicone Acético",
+    linha: "LINHA CONSTRUÇÃO",
+    imgbgproduto: "/imagens/BgProdutos/bg_acetico.svg",
+    descricao:
+      "Selante de silicone de cura acética com fungicida para uso profissional.",
+    disponivel: "Tubos 400g / Sachê 820g",
+    aplicacao:
+      "Vedações em vidro e alumínio, cerâmica, azulejos, porcelanas e fibras.",
+    imagemDoProduto: "/imagens/Produtos/Silicone_Acetico - UNI.png",
+    imagemProductAlt: "UNIPRO Silicone Acetico",
+    fichaTécnica: "f",
+    fispq: "",
+    translateKey: "sili-ace",
+    especificacoes: "",
+  },
+  {
+    id: 19,
+    nome: "Silicone Base Agua",
+    linha: "LINHA CONSTRUÇÃO",
+    imgbgproduto: "/imagens/BgProdutos/bg_baseagua.svg",
+    descricao:
+      "Selante de silicone de cura acética com fungicida para uso profissional. Cura em contato com a umidade atmosférica, transformando-se em uma borracha flexível e impermeável. Não forma fungos.",
+    disponivel: "Tubos 400g / Sachê 820g",
+    aplicacao:
+      "Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.",
+    imagemDoProduto: "/imagens/Produtos/SILICONE_BASE_AGUA.png",
+    imagemProductAlt: "UNIPRO Silicone Acetico",
+    fichaTécnica: "",
+    fispq: "",
+    translateKey: "sili-baseagua",
+    especificacoes: "",
+  },
+  {
+    id: 6,
     nome: "Fixa Espelho",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_espelho.svg",
@@ -77,7 +128,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Colagem e fixação de espelhos e vidros em diferentes superfícies da construção civil, não produzindo manchas ou qualquer outro tipo de alteração.",
-    imagemDoProduto: "/imagens/Produtos/Fixa_Espelho - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/Fixa_Espelho - UNI.png",
     imagemProductAlt: "UNIPRO Fixa Espelho",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_Fixa_espelho.pdf",
     fispq: "/Arquivos/FISPQ_Fixa_Espelho.pdf",
@@ -85,7 +136,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 6,
+    id: 7,
     nome: "Fixa Tudo",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_tudo.svg",
@@ -94,7 +145,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Superfícies lisas e porosas, alvenaria, madeira, mármore e granitos, espelhos, vidro, alumínio, aço, espelhos, azulejos entre outras superfícies da construção civil.",
-    imagemDoProduto: "/imagens/Produtos/Fixa_Tudo - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/Fixa_Tudo - UNI.png",
     imagemProductAlt: "UNIPRO Fixa Tudo",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_Fixa_tudo.pdf", // baixar
     fispq: "/Arquivos/FISPQ_Fixa_tudo.pdf", // baixar
@@ -102,7 +153,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 7,
+    id: 8,
     nome: "Fixa Cuba",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_cuba.svg",
@@ -111,7 +162,7 @@ const ProdutosUnipro = [
     disponivel: "Tubos 400g / Sachê 820g",
     aplicacao:
       "Fixação de cubas metálicas e de cerâmicas em pias de mármores e de granitos.",
-    imagemDoProduto: "/imagens/Produtos/Fixa_Cuba - UNIPRO.png",
+    imagemDoProduto: "/imagens/Produtos/Fixa_Cuba - UNI.png",
     imagemProductAlt: "UNIPRO Cuba Espelho",
     fichaTécnica: "/Arquivos/Ficha_Tecnica_Fixa_cuba.pdf",
     fispq: "/Arquivos/FISPQ_Fixa_Cuba.pdf",
@@ -119,7 +170,24 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 8,
+    id: 9,
+    nome: "Veda Calha",
+    linha: "LINHA CONSTRUÇÃO",
+    imgbgproduto: "/imagens/BgProdutos/bg_vedacalha.svg",
+    descricao:
+      "Selante para uso profissional, adere em diferentes superfícies - vidro, concreto, madeira, metal, fibra, cerâmica, borracha etc. Cura em contato com a umidade ambiente formando uma borracha resistente e flexível. Pode ser pintado, lavado e não forma fungos.",
+    disponivel: "Tubos 400g / Sachê 820g",
+    aplicacao:
+      "Indicado para as mais diversas aplicações de vedações, preenchimentos e reparos da construção civil.",
+    imagemDoProduto: "/imagens/Produtos/VEDA_CALHA.png",
+    imagemProductAlt: "UNIPRO PU40",
+    fichaTécnica: "",
+    fispq: "",
+    translateKey: "pu-ved",
+    especificacoes: "",
+  },
+  {
+    id: 10,
     nome: "Sache",
     linha: "LINHA CONSTRUÇÃO",
     imgbgproduto: "/imagens/BgProdutos/bg_pu40.svg",
@@ -136,7 +204,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 9,
+    id: 11,
     imgbgproduto: "/imagens/BgProdutos/bg_neutro.svg",
     imagemDoProduto: "/imagens/Produtos/Desengripante.png",
     imagemProductAlt: "",
@@ -146,7 +214,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 10,
+    id: 12,
     imgbgproduto: "/imagens/BgProdutos/bg_hibrido.svg",
     imagemDoProduto: "/imagens/Produtos/Espuma_Espansiva.png",
     imagemProductAlt: "",
@@ -156,7 +224,7 @@ const ProdutosUnipro = [
     especificacoes: "",
   },
   {
-    id: 11,
+    id: 13,
     imgbgproduto: "/imagens/BgProdutos/bg_tudo.svg",
     imagemDoProduto: "/imagens/Produtos/Broca.png",
     imagemProductAlt: "",
@@ -166,7 +234,7 @@ const ProdutosUnipro = [
     translateKey: "broc-reb",
   },
   {
-    id: 12,
+    id: 14,
     imgbgproduto: "/imagens/BgProdutos/bg_paraf.svg",
     imagemDoProduto: "/imagens/Produtos/Parafuso.png",
     imagemProductAlt: "",
@@ -176,7 +244,7 @@ const ProdutosUnipro = [
     translateKey: "paraf",
   },
   {
-    id: 13,
+    id: 15,
     imgbgproduto: "/imagens/BgProdutos/bg_tudo.svg",
     imagemDoProduto: "/imagens/Produtos/Bucha.png",
     imagemProductAlt: "",
@@ -186,7 +254,7 @@ const ProdutosUnipro = [
     translateKey: "bucha",
   },
   {
-    id: 14,
+    id: 16,
     imgbgproduto: "/imagens/BgProdutos/bg_tudo.svg",
     imagemDoProduto: "/imagens/Produtos/Discos.png",
     imagemProductAlt: "",
@@ -196,7 +264,7 @@ const ProdutosUnipro = [
     translateKey: "disco",
   },
   {
-    id: 15,
+    id: 17,
     imgbgproduto: "/imagens/BgProdutos/bg_acetico.svg",
     imagemDoProduto: "/imagens/Produtos/Brocantes.png",
     imagemProductAlt: "",

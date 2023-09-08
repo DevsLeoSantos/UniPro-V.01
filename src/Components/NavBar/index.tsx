@@ -17,19 +17,25 @@ import Contats from "../../Pages/Contats";
 
 //Estilos
 import "./NavBar.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import { languages } from "../../enums/languages";
+import BntWhats from "../BntWhats";
 
 const NavBar = () => {
   var selectRef = useRef<HTMLSelectElement>(null);
   const { t } = useTranslation("common");
 
+  const [language , setLanguage] = useState(i18next.language);
+
   async function changeLanguage(language: languages) {
     await i18next.changeLanguage(language);
   }
 
+   useEffect(() => {
+      setLanguage(i18next.language)
+   } ,[i18next.language])
   return (
     <Router>
       <div className="conteiner_NavBar">
@@ -97,20 +103,28 @@ const NavBar = () => {
           >
             <img src={Es} />
           </button>
-          {/* <select name="" id="" ref={selectRef} onChange={changeLanguage}>
-            <option value={languages.pt_br}>
-              <PtBr />
-            </option>
-            <option value={languages.en}>INGLES</option>
-            <option value={languages.es}>ESPANHOL</option>
-          </select> */}
+       
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/empresa" element={<Company />} />
-        <Route path="/produtos" element={<Products />} />
-        <Route path="/contato" element={<Contats />} />
+        <Route path="/" element={  
+           <>
+             <Home /> 
+             <BntWhats language={language} />
+           </>
+        } />
+        <Route path="/empresa" element={ <>
+             <Company /> 
+             <BntWhats language={language} />
+           </>} />
+        <Route path="/produtos" element={ <>
+             <Products /> 
+             <BntWhats language={language} />
+           </>} />
+        <Route path="/contato" element={ <>
+             <Contats  /> 
+             <BntWhats language={language} />
+           </>} />
       </Routes>
     </Router>
   );
