@@ -2,6 +2,7 @@
   "navbar.home": "Hogar",
   "navbar.empresa": "Compañía",
   "navbar.produtos": "Productos",
+  "navbar.distribuidor": "Distribuidor",
   "navbar.contato": "Contacto",
   "navbar.atualiza.boleto": "Actualize tu billete",
   "home.melhores.produtos.titulo": "Consulta nuestros mejores productos",
@@ -70,13 +71,10 @@
   "produtos.sili-ace-15.linha": "LINEA DE CONSTRUCCION",
   "produtos.sili-ace-15.descricao": "Sellador de silicona de curado acético con fungicida para uso profesional. Cura en contacto con la humedad atmosférica transformándose en una goma flexible e impermeable. No forma hongos.",
   "produtos.sili-ace-15.aplicacao": "Indicado para las más diversas aplicaciones de sellado, relleno y reparaciones en la construcción civil.",
-  
   "produtos.sili-baseagua.nome": "Silicona Base Agua",
   "produtos.sili-baseagua.linha": "LINEA DE CONSTRUCCION",
   "produtos.sili-baseagua.descricao": "Sellador de elastómeros acrílicos silanizados que, tras el secado, se convierte en una goma incolora, flexible, impermeable y de gran resistencia.",
   "produtos.sili-baseagua.aplicacao": "Se utiliza para el sellado perimetral de puertas y ventanas, cabinas de ducha, tanques, fregaderos y varios acabados, apto para aplicaciones de interior y exterior.",
-  
-  
   "produtos.fix-es.nome": "Espejo Fijo",
   "produtos.fix-es.linha": "LINEA DE CONSTRUCCION",
   "produtos.fix-es.descricao": "Adhesivo a base de polímeros híbridos, de consistencia pastosa, con propiedades antideslizamiento. Sin disolventes, no provoca manchas en la superficie de los espejos.",
@@ -125,6 +123,16 @@
   "produtos.broc-reb.linha": "BROCAS Y REMACHES",
   "produtos.broc-reb.descricao": "Se utiliza para la fijación de estructuras metálicas, unión de chapas y perfiles, fijación de madera a acero, aluminio, etc.",
   "produtos.broc-reb.aplicacao": "Taladros, remaches y puntas. Varios tamaños, consulte nuestras Especificaciones o contáctenos.",
+  
+  "main.distribuidor.titulo": "CONVIÉRTETE EN UN DISTRIBUIDOR!",
+  "main.distribuidor.vantagens": "Beneficios",
+  "main.distribuidor.requisitos": "REQUISITOS",
+  "main.distribuidor.pagamento.descricao": "PLAZO DE PAGO DIFERENCIADO",
+  "main.distribuidor.ofertaso.descricao": "PRODUCTOS CON LAS MEJORES OFERTAS",
+  "main.distribuidor.divulgacao.descricao": "PROMOCIONANDO TU PROPIA MARCA",
+  "main.distribuidor.dinheiro.descricao": "COMPRAS SUPERIORES A 2.000 UNIDADES",
+  "main.distribuidor.marca.descricao": "DISEÑA TU PROPIA MARCA",
+  
   "main.contato.titulo": "¡Preguntas frecuentes!",
   "main.contato.valor.frete.titulo": "¿Cuál es el costo de envío?",
   "main.contato.valor.frete.resposta": "Varía según la región de entrega, al hacer el presupuesto se negocia el flete de acuerdo al valor del pedido.",

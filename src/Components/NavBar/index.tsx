@@ -13,6 +13,7 @@ import PtBr from "/imagens/Navbar/Traducao/PORTUGUES.svg";
 import Home from "../../Pages/Home";
 import Company from "../../Pages/Company";
 import Products from "../../Pages/Products";
+import Distribuidor from "../../Pages/Distribuidor";
 import Contats from "../../Pages/Contats";
 
 //Estilos
@@ -55,6 +56,9 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/produtos">{t("navbar.produtos")}</Link>
+            </li>
+            <li>
+              <Link to="/distribuidor">{t("navbar.distribuidor")}</Link>
             </li>
             <li>
               <Link to="/contato">{t("navbar.contato")}</Link>
@@ -119,6 +123,10 @@ const NavBar = () => {
            </>} />
         <Route path="/produtos" element={ <>
              <Products /> 
+             <BntWhats language={language} />
+           </>} />
+        <Route path="/distribuidor" element={ <>
+             <Distribuidor /> 
              <BntWhats language={language} />
            </>} />
         <Route path="/contato" element={ <>

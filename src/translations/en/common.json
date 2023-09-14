@@ -2,6 +2,7 @@
   "navbar.home": "Home",
   "navbar.empresa": "Company",
   "navbar.produtos": "Products",
+  "navbar.distribuidor": "Distributor",
   "navbar.contato": "Contact",
   "navbar.atualiza.boleto": "Update your ticket",
   "home.melhores.produtos.titulo": "Check our best products",
@@ -70,13 +71,10 @@
   "produtos.sili-ace-15.linha": "CONSTRUCTION LINE",
   "produtos.sili-ace-15.descricao": "Acetic curing silicone sealant with fungicide for professional use. It cures in contact with atmospheric humidity, transforming into a flexible and impermeable rubber. Does not form fungus.",
   "produtos.sili-ace-15.aplicacao": "Indicated for the most diverse applications of sealing, filling and repairs in civil construction.",
-  
   "produtos.sili-baseagua.nome": "Water Based Silicone",
   "produtos.sili-baseagua.linha": "CONSTRUCTION LINE",
   "produtos.sili-baseagua.descricao": "Silanized acrylic elastomer sealant that, after drying, becomes a colorless, flexible, impermeable, and great resistance.",
   "produtos.sili-baseagua.aplicacao": "It is used for the perimeter sealing of doors and windows, shower cabins, tanks, sinks and various finishes, suitable for indoor and outdoor applications.",
-  
-  
   "produtos.fix-es.nome": "Fixed Mirror",
   "produtos.fix-es.linha": "CONSTRUCTION LINE",
   "produtos.fix-es.descricao": "Adhesive based on hybrid polymers, pasty consistency, with non-sag properties. Solvent-free, it does not cause stains on the surface of mirrors. ",
@@ -125,6 +123,16 @@
   "produtos.broc-reb.linha": "DRILL AND RIVETS",
   "produtos.broc-reb.descricao": "Used for fastening metallic structures, joining sheets and profiles, fastening wood to steel, aluminum, etc.",
   "produtos.broc-reb.aplicacao": "Drills, rivets and tips. Various sizes, check out our Specifications or contact us.",
+  
+  "main.distribuidor.titulo": "BECOME A DISTRIBUTOR!",
+  "main.distribuidor.vantagens": "Benefits",
+  "main.distribuidor.requisitos": "REQUIREMENTS",
+  "main.distribuidor.pagamento.descricao": "DIFFERENTIATED PAYMENT TERM",
+  "main.distribuidor.ofertaso.descricao": "PRODUCTS WITH THE BEST OFFERS",
+  "main.distribuidor.divulgacao.descricao": "PROMOTING YOUR OWN BRAND",
+  "main.distribuidor.dinheiro.descricao": "PURCHASES OVER 2,000 UNITS",
+  "main.distribuidor.marca.descricao": "DESIGN YOUR OWN BRAND",
+  
   "main.contato.titulo": "Frequently Asked Questions!",
   "main.contato.valor.frete.titulo": "What is the shipping cost ?",
   "main.contato.valor.frete.resposta": "It varies by delivery region, when making the budget the freight is negotiated according to the order value.",

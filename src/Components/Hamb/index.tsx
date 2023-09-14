@@ -29,6 +29,9 @@ const Hamb = () => {
           <Link to='/produtos'>Produtos</Link>
         </li>
         <li>
+          <Link to='/distribuidor'>Distribuidor</Link> 
+        </li>
+        <li>
           <Link to='/contato'>Contato</Link>
         </li>
       </nav>
