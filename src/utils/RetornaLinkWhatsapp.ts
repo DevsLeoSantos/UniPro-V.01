@@ -9,14 +9,24 @@ var languageUrls = {
     es : "https://wa.link/3mlwt7"
 }
 
-export default function RetornarLink(language : string){
+var languageUrls2 = {
+    pt_br : "https://wa.link/w63kpq",
+    en : "https://wa.link/9vi8x9",
+    es : "https://wa.link/uthci5"
+}
+
+export default function RetornarLink(language : string, useLanguageUrls2 = false){
    
     switch(language){
         case languages.pt_br:
-            return languageUrls[languages.pt_br];
+            return useLanguageUrls2 ? languageUrls2[language] : languageUrls[language];
+            //return languageUrls[languages.pt_br];
         case languages.en:
-            return languageUrls[languages.en];
+            return useLanguageUrls2 ? languageUrls2[language] : languageUrls[language];
+            //return languageUrls[languages.en];
         case languages.es:
-            return languageUrls[languages.es];
-    }
+            return useLanguageUrls2 ? languageUrls2[language] : languageUrls[language];
+            //return languageUrls[languages.es];
+
+}
 }

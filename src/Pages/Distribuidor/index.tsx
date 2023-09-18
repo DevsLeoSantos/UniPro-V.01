@@ -23,6 +23,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import RetornarLink from "../../utils/RetornaLinkWhatsapp";
 
+
 const Distribuidor = () => {
   const { t } = useTranslation("common");
 
@@ -82,7 +83,7 @@ const Distribuidor = () => {
       </div>
       <div className="Conteiner__imgDistribuidor">
         <img src={ImgDistribuidor} alt="Imagem de Distribuidor"/>
-        <a className="Bnt__Msg_Dist" href={RetornarLink(language)} target="_blank">
+        <a className="Bnt__Msg_Dist" href={RetornarLink(language, true)} target="_blank">
           {t("main.contato.botao.entrar.contato")}
         </a>
       </div>
